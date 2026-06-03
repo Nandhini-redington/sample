@@ -1,0 +1,112 @@
+QUERY PATTERN
+Table: Customer
+Pattern Type: group_by
+Columns: City, Region, Country
+Description: Customer supports group_by queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Customer
+Pattern Type: filtering
+Columns: City, Region, Country
+Description: Customer supports filtering queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Customer
+Pattern Type: search
+Columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+Description: Customer supports search queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: time_series
+Columns: OrderDate, RequiredDate, ShippedDate
+Description: Order supports time_series queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: aggregation
+Columns: Freight
+Description: Order supports aggregation queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: group_by
+Columns: ShipCity, ShipRegion, ShipCountry
+Description: Order supports group_by queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: filtering
+Columns: OrderDate, RequiredDate, ShippedDate, ShipCity, ShipRegion, ShipCountry
+Description: Order supports filtering queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: sorting
+Columns: OrderDate, RequiredDate, ShippedDate, Freight
+Description: Order supports sorting queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Order
+Pattern Type: search
+Columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+Description: Order supports search queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Product
+Pattern Type: aggregation
+Columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel
+Description: Product supports aggregation queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Product
+Pattern Type: group_by
+Columns: CategoryId
+Description: Product supports group_by queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Product
+Pattern Type: filtering
+Columns: CategoryId
+Description: Product supports filtering queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Product
+Pattern Type: sorting
+Columns: UnitPrice
+Description: Product supports sorting queries
+
+================================================================================
+
+QUERY PATTERN
+Table: Product
+Pattern Type: search
+Columns: ProductName, QuantityPerUnit
+Description: Product supports search queries
+
+================================================================================
+

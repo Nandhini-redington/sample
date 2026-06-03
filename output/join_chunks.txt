@@ -1,0 +1,36 @@
+JOIN RELATIONSHIP
+Source Table: Order
+Target Entity: Customer
+Join Column: CustomerId
+Relationship Type: entity_reference
+Description: Order references Customer using CustomerId
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: Order
+Target Entity: Employee
+Join Column: EmployeeId
+Relationship Type: entity_reference
+Description: Order references Employee using EmployeeId
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: Product
+Target Entity: Supplier
+Join Column: SupplierId
+Relationship Type: entity_reference
+Description: Product references Supplier using SupplierId
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: Product
+Target Entity: Category
+Join Column: CategoryId
+Relationship Type: entity_reference
+Description: Product references Category using CategoryId
+
+================================================================================
+

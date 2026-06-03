@@ -1,0 +1,181 @@
+[
+    {
+        "chunk_id": "pattern_customer_group_by",
+        "chunk_type": "query_pattern",
+        "pattern_type": "group_by",
+        "table": "Customer",
+        "columns": [
+            "City",
+            "Region",
+            "Country"
+        ],
+        "description": "Customer supports group_by queries"
+    },
+    {
+        "chunk_id": "pattern_customer_filtering",
+        "chunk_type": "query_pattern",
+        "pattern_type": "filtering",
+        "table": "Customer",
+        "columns": [
+            "City",
+            "Region",
+            "Country"
+        ],
+        "description": "Customer supports filtering queries"
+    },
+    {
+        "chunk_id": "pattern_customer_search",
+        "chunk_type": "query_pattern",
+        "pattern_type": "search",
+        "table": "Customer",
+        "columns": [
+            "Id",
+            "CompanyName",
+            "ContactName",
+            "ContactTitle",
+            "Address",
+            "City",
+            "Region",
+            "PostalCode",
+            "Country",
+            "Phone",
+            "Fax"
+        ],
+        "description": "Customer supports search queries"
+    },
+    {
+        "chunk_id": "pattern_order_time_series",
+        "chunk_type": "query_pattern",
+        "pattern_type": "time_series",
+        "table": "Order",
+        "columns": [
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate"
+        ],
+        "description": "Order supports time_series queries"
+    },
+    {
+        "chunk_id": "pattern_order_aggregation",
+        "chunk_type": "query_pattern",
+        "pattern_type": "aggregation",
+        "table": "Order",
+        "columns": [
+            "Freight"
+        ],
+        "description": "Order supports aggregation queries"
+    },
+    {
+        "chunk_id": "pattern_order_group_by",
+        "chunk_type": "query_pattern",
+        "pattern_type": "group_by",
+        "table": "Order",
+        "columns": [
+            "ShipCity",
+            "ShipRegion",
+            "ShipCountry"
+        ],
+        "description": "Order supports group_by queries"
+    },
+    {
+        "chunk_id": "pattern_order_filtering",
+        "chunk_type": "query_pattern",
+        "pattern_type": "filtering",
+        "table": "Order",
+        "columns": [
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate",
+            "ShipCity",
+            "ShipRegion",
+            "ShipCountry"
+        ],
+        "description": "Order supports filtering queries"
+    },
+    {
+        "chunk_id": "pattern_order_sorting",
+        "chunk_type": "query_pattern",
+        "pattern_type": "sorting",
+        "table": "Order",
+        "columns": [
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate",
+            "Freight"
+        ],
+        "description": "Order supports sorting queries"
+    },
+    {
+        "chunk_id": "pattern_order_search",
+        "chunk_type": "query_pattern",
+        "pattern_type": "search",
+        "table": "Order",
+        "columns": [
+            "CustomerId",
+            "OrderDate",
+            "RequiredDate",
+            "ShippedDate",
+            "ShipName",
+            "ShipAddress",
+            "ShipCity",
+            "ShipRegion",
+            "ShipPostalCode",
+            "ShipCountry"
+        ],
+        "description": "Order supports search queries"
+    },
+    {
+        "chunk_id": "pattern_product_aggregation",
+        "chunk_type": "query_pattern",
+        "pattern_type": "aggregation",
+        "table": "Product",
+        "columns": [
+            "UnitPrice",
+            "UnitsInStock",
+            "UnitsOnOrder",
+            "ReorderLevel"
+        ],
+        "description": "Product supports aggregation queries"
+    },
+    {
+        "chunk_id": "pattern_product_group_by",
+        "chunk_type": "query_pattern",
+        "pattern_type": "group_by",
+        "table": "Product",
+        "columns": [
+            "CategoryId"
+        ],
+        "description": "Product supports group_by queries"
+    },
+    {
+        "chunk_id": "pattern_product_filtering",
+        "chunk_type": "query_pattern",
+        "pattern_type": "filtering",
+        "table": "Product",
+        "columns": [
+            "CategoryId"
+        ],
+        "description": "Product supports filtering queries"
+    },
+    {
+        "chunk_id": "pattern_product_sorting",
+        "chunk_type": "query_pattern",
+        "pattern_type": "sorting",
+        "table": "Product",
+        "columns": [
+            "UnitPrice"
+        ],
+        "description": "Product supports sorting queries"
+    },
+    {
+        "chunk_id": "pattern_product_search",
+        "chunk_type": "query_pattern",
+        "pattern_type": "search",
+        "table": "Product",
+        "columns": [
+            "ProductName",
+            "QuantityPerUnit"
+        ],
+        "description": "Product supports search queries"
+    }
+]
