@@ -59,23 +59,39 @@ class AdvancedChunkBuilder:
                 target_entity = relationship.get(
                     "references_entity"
                 )
+                retrieval_text = (
+                    f"{table_name} can be joined "
+                    f"with {target_entity} "
+                    f"using {join_column}. "
+                    f"This relationship enables "
+                    f"cross-table business analysis."
+                )
+
                 chunk = {
+
                     "chunk_id":
                         f"join_{table_name.lower()}_{join_column.lower()}",
+
                     "chunk_type":
-                        "join_path",
+                        "join_entity",
+
                     "source_table":
                         table_name,
+
                     "target_entity":
                         target_entity,
+
                     "join_column":
                         join_column,
+
                     "relationship_type":
                         "entity_reference",
-                    "description":
-                        f"{table_name} references "
-                        f"{target_entity} using "
-                        f"{join_column}"
+
+                    "retrieval_text":
+                        retrieval_text,
+
+                    "embedding_text":
+                        retrieval_text
                 }
                 self.join_chunks.append(chunk)
         print(
@@ -118,20 +134,35 @@ class AdvancedChunkBuilder:
                 )
                 if not columns:
                     continue
+                retrieval_text = (
+                    f"{table_name} supports "
+                    f"{pattern_type} analysis "
+                    f"using columns "
+                    f"{', '.join(columns)}."
+                )
+
                 chunk = {
+
                     "chunk_id":
                         f"pattern_{table_name.lower()}_{pattern_type}",
+
                     "chunk_type":
                         "query_pattern",
-                    "pattern_type":
-                        pattern_type,
+
                     "table":
                         table_name,
+
+                    "pattern_type":
+                        pattern_type,
+
                     "columns":
                         columns,
-                    "description":
-                        f"{table_name} supports "
-                        f"{pattern_type} queries"
+
+                    "retrieval_text":
+                        retrieval_text,
+
+                    "embedding_text":
+                        retrieval_text
                 }
                 self.query_pattern_chunks.append(
                     chunk
@@ -181,8 +212,8 @@ class AdvancedChunkBuilder:
                     f"{chunk['relationship_type']}\n"
                 )
                 f.write(
-                    f"Description: "
-                    f"{chunk['description']}\n"
+                    f"Retrieval Text: "
+                    f"{chunk['retrieval_text']}\n"
                 )
                 f.write(
                     "\n"
@@ -222,8 +253,8 @@ class AdvancedChunkBuilder:
                     f"{', '.join(chunk['columns'])}\n"
                 )
                 f.write(
-                    f"Description: "
-                    f"{chunk['description']}\n"
+                    f"Retrieval Text: "
+                    f"{chunk['retrieval_text']}\n"
                 )
                 f.write(
                     "\n"
