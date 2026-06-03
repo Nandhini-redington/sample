@@ -1,6 +1,9 @@
 import json
-from pathlib import Path
+import yaml
 
+def load_config(path="config.yaml"):
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
 def load_schema(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -16,12 +19,16 @@ def normalize(text: str) -> str:
 
 def build_table_entity_chunk(table):
 
-    retrieval_text = " ".join([
-        table["table_name"],
-        table.get("description", ""),
-        table.get("nl2sql_metadata", {}).get("business_entity", ""),
-        " ".join(table.get("semantic_tags", []))
-    ])
+    retrieval_text = normalize(f"""
+    Table {table['table_name']} represents
+    {table.get('description', '')}.
+
+    Business entity:
+    {table.get('nl2sql_metadata', {}).get('business_entity', '')}.
+
+    Tags:
+    {', '.join(table.get('semantic_tags', []))}
+    """)
 
     return {
         "chunk_type": "table_entity",
@@ -46,7 +53,7 @@ def build_table_entity_chunk(table):
 # COLUMN ENTITY CHUNK (FLATTENED + RASL READY)
 # =====================================================
 
-def build_column_entity_chunks(table):
+def build_column_entity_chunks(table, config):
 
     meta = table.get("nl2sql_metadata", {})
 
@@ -85,70 +92,20 @@ def build_column_entity_chunks(table):
             "retrieval_text": normalize(retrieval_text + " " + fk_hint)
         }
 
-    # -------------------------
-    # Identity
-    # -------------------------
-    for col in meta.get("primary_entities", []):
-        chunks.append(
-            make(
-                col,
-                "identity",
-                "unique identifier primary key join key",
-                "id identifier key"
-            )
-        )
+    column_roles = config.get("column_roles", {})
 
-    # -------------------------
-    # Aggregation
-    # -------------------------
-    for col in meta.get("aggregation_columns", []):
-        chunks.append(
-            make(
-                col,
-                "aggregation",
-                "numeric field used for sum avg count analytics",
-                "amount total revenue salary metric"
-            )
-        )
+    for metadata_key, role_cfg in column_roles.items():
 
-    # -------------------------
-    # Filter
-    # -------------------------
-    for col in meta.get("filter_columns", []):
-        chunks.append(
-            make(
-                col,
-                "filter",
-                "used in where clause filtering conditions",
-                "equals condition filter search"
-            )
-        )
+        for col in meta.get(metadata_key, []):
 
-    # -------------------------
-    # Temporal
-    # -------------------------
-    for col in meta.get("date_columns", []):
-        chunks.append(
-            make(
-                col,
-                "temporal",
-                "date time used for ordering and time filtering",
-                "date time timestamp order"
+            chunks.append(
+                make(
+                    col=col,
+                    role=role_cfg["role"],
+                    meaning=role_cfg["meaning"],
+                    extra_keywords=role_cfg["keywords"]
+                )
             )
-        )
-
-    # -------------------------
-    # Search
-    # -------------------------
-    for col in meta.get("searchable_columns", []):
-        chunks.append(
-            make(
-                col,
-                "search",
-                "text field used for like search matching",
-                "text name description string"
-            )
-        )
 
     return chunks
 
@@ -156,7 +113,7 @@ def build_column_entity_chunks(table):
 # MAIN FLATTENED OUTPUT (IMPORTANT FOR VECTOR DB)
 # =====================================================
 
-def build_chunks(table):
+def build_chunks(table, config):
 
     chunks = []
 
@@ -164,7 +121,7 @@ def build_chunks(table):
     chunks.append(build_table_entity_chunk(table))
 
     # column chunks (FLAT OUTPUT)
-    chunks.extend(build_column_entity_chunks(table))
+    chunks.extend(build_column_entity_chunks(table, config))
 
     return chunks
 
@@ -205,28 +162,25 @@ if __name__ == "__main__":
 
     print("🔥 FILE STARTED")
 
-    input_path = "output/schema_metadata.json"
+    config = load_config()
 
-    table_output = "output/table_chunks.txt"
-    column_output = "output/column_chunks.txt"
+    input_path = config["output"]["metadata_file"]
+
+    table_output = config["output"]["table_chunks"]
+    column_output = config["output"]["column_chunks"]
 
     schema = load_schema(input_path)
 
     all_chunks = []
 
     for table in schema["tables"]:
-        all_chunks.extend(build_chunks(table))
+        all_chunks.extend(build_chunks(table, config))
 
     table_chunks, column_chunks = split_chunks(all_chunks)
 
-    # -------------------------
-    # SAVE TABLE CHUNKS (TEXT)
-    # -------------------------
+
     save_chunks_as_text(table_chunks, table_output)
 
-    # -------------------------
-    # SAVE COLUMN CHUNKS (TEXT)
-    # -------------------------
     save_chunks_as_text(column_chunks, column_output)
 
     print("✅ Chunking completed")

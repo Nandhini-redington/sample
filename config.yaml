@@ -1,0 +1,75 @@
+database:
+  type: sqlite
+  path: data/northwind_small.sqlite
+
+
+domain:
+  name: salestest
+
+
+tables:
+  - Customer
+  - Order
+  - Product
+
+output:
+  metadata_file: output/schema_metadata.json
+  table_chunks: output/table_chunks.txt
+  column_chunks: output/column_chunks.txt
+
+s3:
+  upload: true
+  bucket: tenant-ai-knowledge-base
+  prefix: ""
+  region: ap-south-1
+
+chunking:
+  output_dir: output
+
+embedding:
+  provider: litellm
+  model: text-embedding-3-small
+  batch_size: 32
+  normalize: true
+
+vector_store:
+  type: s3_vector
+
+  collection:
+    name: nl2sql-vectorstore
+
+  index:
+    name: schema-index-v1
+
+  batching:
+    insert_batch_size: 100
+
+nl2sql:
+  top_k_tables: 5
+  top_k_columns: 20
+
+column_roles:
+  primary_entities:
+    role: identity
+    meaning: unique identifier primary key join key
+    keywords: id identifier key
+
+  aggregation_columns:
+    role: aggregation
+    meaning: numeric field used for sum avg count analytics
+    keywords: amount total revenue salary metric
+
+  filter_columns:
+    role: filter
+    meaning: used in where clause filtering conditions
+    keywords: equals condition filter search
+
+  date_columns:
+    role: temporal
+    meaning: date time used for ordering and time filtering
+    keywords: date time timestamp order
+
+  searchable_columns:
+    role: search
+    meaning: text field used for like search matching
+    keywords: text name description string

@@ -1,12 +1,89 @@
 {
-    "domain": "salestest",
+    "domain": "default",
     "schema_version": "1.0",
     "tables": [
         {
+            "table_name": "Category",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Category is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 8,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "CategoryName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Description",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "category",
+                "categoryname",
+                "description",
+                "id"
+            ],
+            "semantic_tags": [
+                "category",
+                "categoryname",
+                "description",
+                "id"
+            ],
+            "sample_queries": [
+                "List all category records",
+                "Show total count of category",
+                "Find category details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Category",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Id"
+                ],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "CategoryName",
+                    "Description"
+                ],
+                "filter_columns": [
+                    "CategoryName",
+                    "Description"
+                ],
+                "group_by_columns": [
+                    "CategoryName",
+                    "Description"
+                ],
+                "sort_columns": [
+                    "Id"
+                ]
+            }
+        },
+        {
             "table_name": "Customer",
             "schema_version": "1.0",
-            "table_type": "master",
-            "description": "Customer Master contains all customer information used in business operations.",
+            "table_type": "reference",
+            "description": "Customer is a reference table used in business operations.",
             "primary_key": [
                 "Id"
             ],
@@ -16,67 +93,67 @@
                     "name": "Id",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Unique identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "CompanyName",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer company name"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ContactName",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Primary customer contact"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ContactTitle",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Job title of customer contact"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "Address",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer street address"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "City",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer city"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "Region",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer region or state"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "PostalCode",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer postal code"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "Country",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer country"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "Phone",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer phone number"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "Fax",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Customer fax number"
+                    "description": "Business attribute"
                 }
             ],
             "foreign_keys": [],
@@ -109,7 +186,7 @@
                 "Find customer details"
             ],
             "nl2sql_metadata": {
-                "table_role": "master",
+                "table_role": "reference",
                 "business_entity": "Customer",
                 "relationships": [],
                 "date_columns": [],
@@ -132,23 +209,486 @@
                     "Fax"
                 ],
                 "filter_columns": [
+                    "Id",
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
                     "City",
                     "Region",
-                    "Country"
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax"
                 ],
                 "group_by_columns": [
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
                     "City",
                     "Region",
-                    "Country"
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax"
                 ],
                 "sort_columns": []
             }
         },
         {
+            "table_name": "CustomerCustomerDemo",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "CustomerCustomerDemo is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 0,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "CustomerTypeId",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "customercustomerdemo",
+                "customertypeid",
+                "id"
+            ],
+            "semantic_tags": [
+                "customercustomerdemo",
+                "customertypeid",
+                "id"
+            ],
+            "sample_queries": [
+                "List all customercustomerdemo records",
+                "Show total count of customercustomerdemo",
+                "Find customercustomerdemo details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "CustomerCustomerDemo",
+                "relationships": [
+                    {
+                        "column": "CustomerTypeId",
+                        "references_entity": "CustomerType",
+                        "relationship_source": "heuristic"
+                    }
+                ],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [],
+                "primary_entities": [
+                    "Id",
+                    "CustomerTypeId"
+                ],
+                "searchable_columns": [
+                    "Id",
+                    "CustomerTypeId"
+                ],
+                "filter_columns": [
+                    "Id",
+                    "CustomerTypeId"
+                ],
+                "group_by_columns": [
+                    "CustomerTypeId"
+                ],
+                "sort_columns": []
+            }
+        },
+        {
+            "table_name": "CustomerDemographic",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "CustomerDemographic is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 0,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "CustomerDesc",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "customerdemographic",
+                "customerdesc",
+                "id"
+            ],
+            "semantic_tags": [
+                "customerdemographic",
+                "customerdesc",
+                "id"
+            ],
+            "sample_queries": [
+                "List all customerdemographic records",
+                "Show total count of customerdemographic",
+                "Find customerdemographic details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "CustomerDemographic",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "Id",
+                    "CustomerDesc"
+                ],
+                "filter_columns": [
+                    "Id",
+                    "CustomerDesc"
+                ],
+                "group_by_columns": [
+                    "CustomerDesc"
+                ],
+                "sort_columns": []
+            }
+        },
+        {
+            "table_name": "Employee",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Employee is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 9,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "LastName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "FirstName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Title",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "TitleOfCourtesy",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "BirthDate",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business date field"
+                },
+                {
+                    "name": "HireDate",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business date field"
+                },
+                {
+                    "name": "Address",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "City",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Region",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "PostalCode",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Country",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "HomePhone",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Extension",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Photo",
+                    "type": "BLOB",
+                    "nullable": true,
+                    "description": "Business data field"
+                },
+                {
+                    "name": "Notes",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "ReportsTo",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Numeric business metric"
+                },
+                {
+                    "name": "PhotoPath",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "address",
+                "birthdate",
+                "city",
+                "country",
+                "employee",
+                "extension",
+                "firstname",
+                "hiredate",
+                "homephone",
+                "id",
+                "lastname",
+                "notes",
+                "photo",
+                "photopath",
+                "postalcode"
+            ],
+            "semantic_tags": [
+                "employee",
+                "firstname",
+                "id",
+                "lastname",
+                "title",
+                "titleofcourtesy"
+            ],
+            "sample_queries": [
+                "List all employee records",
+                "Show total count of employee",
+                "Find employee details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Employee",
+                "relationships": [],
+                "date_columns": [
+                    "BirthDate",
+                    "HireDate"
+                ],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Id",
+                    "ReportsTo"
+                ],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "LastName",
+                    "FirstName",
+                    "Title",
+                    "TitleOfCourtesy",
+                    "BirthDate",
+                    "HireDate",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "HomePhone",
+                    "Extension",
+                    "Notes",
+                    "PhotoPath"
+                ],
+                "filter_columns": [
+                    "LastName",
+                    "FirstName",
+                    "Title",
+                    "TitleOfCourtesy",
+                    "BirthDate",
+                    "HireDate",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "HomePhone",
+                    "Extension",
+                    "Notes",
+                    "PhotoPath"
+                ],
+                "group_by_columns": [
+                    "LastName",
+                    "FirstName",
+                    "Title",
+                    "TitleOfCourtesy",
+                    "BirthDate",
+                    "HireDate",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "HomePhone",
+                    "Extension",
+                    "Notes",
+                    "PhotoPath"
+                ],
+                "sort_columns": [
+                    "Id",
+                    "ReportsTo"
+                ]
+            }
+        },
+        {
+            "table_name": "EmployeeTerritory",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "EmployeeTerritory is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 49,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "EmployeeId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "TerritoryId",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "employeeid",
+                "employeeterritory",
+                "id",
+                "territoryid"
+            ],
+            "semantic_tags": [
+                "employeeid",
+                "employeeterritory",
+                "id",
+                "territoryid"
+            ],
+            "sample_queries": [
+                "List all employeeterritory records",
+                "Show total count of employeeterritory",
+                "Find employeeterritory details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "EmployeeTerritory",
+                "relationships": [
+                    {
+                        "column": "EmployeeId",
+                        "references_entity": "Employee",
+                        "relationship_source": "heuristic"
+                    },
+                    {
+                        "column": "TerritoryId",
+                        "references_entity": "Territory",
+                        "relationship_source": "heuristic"
+                    }
+                ],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "EmployeeId"
+                ],
+                "primary_entities": [
+                    "Id",
+                    "EmployeeId",
+                    "TerritoryId"
+                ],
+                "searchable_columns": [
+                    "Id",
+                    "TerritoryId"
+                ],
+                "filter_columns": [
+                    "Id",
+                    "TerritoryId"
+                ],
+                "group_by_columns": [
+                    "TerritoryId"
+                ],
+                "sort_columns": [
+                    "EmployeeId"
+                ]
+            }
+        },
+        {
             "table_name": "Order",
             "schema_version": "1.0",
-            "table_type": "transaction",
-            "description": "Order Master contains all order information used in business operations.",
+            "table_type": "master",
+            "description": "Order is a master table used in business operations.",
             "primary_key": [
                 "Id"
             ],
@@ -158,85 +698,85 @@
                     "name": "Id",
                     "type": "INTEGER",
                     "nullable": true,
-                    "description": "Unique identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "CustomerId",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Unique customer identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "EmployeeId",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Unique employee identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "OrderDate",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Date when customer placed order"
+                    "description": "Business date field"
                 },
                 {
                     "name": "RequiredDate",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Expected delivery date"
+                    "description": "Business date field"
                 },
                 {
                     "name": "ShippedDate",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Actual shipment date"
+                    "description": "Business date field"
                 },
                 {
                     "name": "ShipVia",
                     "type": "INTEGER",
                     "nullable": true,
-                    "description": "ShipVia field information"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "Freight",
                     "type": "DECIMAL",
                     "nullable": false,
-                    "description": "Shipping cost"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "ShipName",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Recipient name"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ShipAddress",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Shipping address"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ShipCity",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Shipping city"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ShipRegion",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Shipping region"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ShipPostalCode",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Shipping postal code"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "ShipCountry",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Shipping country"
+                    "description": "Business attribute"
                 }
             ],
             "foreign_keys": [],
@@ -272,16 +812,18 @@
                 "Find order details"
             ],
             "nl2sql_metadata": {
-                "table_role": "transaction",
+                "table_role": "master",
                 "business_entity": "Order",
                 "relationships": [
                     {
                         "column": "CustomerId",
-                        "references_entity": "Customer"
+                        "references_entity": "Customer",
+                        "relationship_source": "heuristic"
                     },
                     {
                         "column": "EmployeeId",
-                        "references_entity": "Employee"
+                        "references_entity": "Employee",
+                        "relationship_source": "heuristic"
                     }
                 ],
                 "date_columns": [
@@ -291,6 +833,9 @@
                 ],
                 "join_paths": [],
                 "aggregation_columns": [
+                    "Id",
+                    "EmployeeId",
+                    "ShipVia",
                     "Freight"
                 ],
                 "primary_entities": [
@@ -311,31 +856,158 @@
                     "ShipCountry"
                 ],
                 "filter_columns": [
+                    "CustomerId",
                     "OrderDate",
                     "RequiredDate",
                     "ShippedDate",
+                    "ShipName",
+                    "ShipAddress",
                     "ShipCity",
                     "ShipRegion",
+                    "ShipPostalCode",
                     "ShipCountry"
                 ],
                 "group_by_columns": [
-                    "ShipCity",
-                    "ShipRegion",
-                    "ShipCountry"
-                ],
-                "sort_columns": [
+                    "CustomerId",
                     "OrderDate",
                     "RequiredDate",
                     "ShippedDate",
+                    "ShipName",
+                    "ShipAddress",
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipPostalCode",
+                    "ShipCountry"
+                ],
+                "sort_columns": [
+                    "Id",
+                    "EmployeeId",
+                    "ShipVia",
                     "Freight"
+                ]
+            }
+        },
+        {
+            "table_name": "OrderDetail",
+            "schema_version": "1.0",
+            "table_type": "master",
+            "description": "OrderDetail is a master table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 2155,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "OrderId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "ProductId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "UnitPrice",
+                    "type": "DECIMAL",
+                    "nullable": false,
+                    "description": "Numeric business metric"
+                },
+                {
+                    "name": "Quantity",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Numeric business metric"
+                },
+                {
+                    "name": "Discount",
+                    "type": "DOUBLE",
+                    "nullable": false,
+                    "description": "Numeric business metric"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "discount",
+                "id",
+                "orderdetail",
+                "orderid",
+                "productid",
+                "quantity",
+                "unitprice"
+            ],
+            "semantic_tags": [
+                "id",
+                "orderdetail",
+                "orderid",
+                "productid",
+                "quantity",
+                "unitprice"
+            ],
+            "sample_queries": [
+                "List all orderdetail records",
+                "Show total count of orderdetail",
+                "Find orderdetail details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "master",
+                "business_entity": "OrderDetail",
+                "relationships": [
+                    {
+                        "column": "OrderId",
+                        "references_entity": "Order",
+                        "relationship_source": "heuristic"
+                    },
+                    {
+                        "column": "ProductId",
+                        "references_entity": "Product",
+                        "relationship_source": "heuristic"
+                    }
+                ],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "OrderId",
+                    "ProductId",
+                    "UnitPrice",
+                    "Quantity",
+                    "Discount"
+                ],
+                "primary_entities": [
+                    "Id",
+                    "OrderId",
+                    "ProductId"
+                ],
+                "searchable_columns": [
+                    "Id"
+                ],
+                "filter_columns": [
+                    "Id"
+                ],
+                "group_by_columns": [],
+                "sort_columns": [
+                    "OrderId",
+                    "ProductId",
+                    "UnitPrice",
+                    "Quantity",
+                    "Discount"
                 ]
             }
         },
         {
             "table_name": "Product",
             "schema_version": "1.0",
-            "table_type": "master",
-            "description": "Product Master contains all product information used in business operations.",
+            "table_type": "reference",
+            "description": "Product is a reference table used in business operations.",
             "primary_key": [
                 "Id"
             ],
@@ -345,61 +1017,61 @@
                     "name": "Id",
                     "type": "INTEGER",
                     "nullable": true,
-                    "description": "Unique identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "ProductName",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Product name"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "SupplierId",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Unique supplier identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "CategoryId",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Unique category identifier"
+                    "description": "Identifier or relationship column"
                 },
                 {
                     "name": "QuantityPerUnit",
                     "type": "VARCHAR(8000)",
                     "nullable": true,
-                    "description": "Packaging quantity per unit"
+                    "description": "Business attribute"
                 },
                 {
                     "name": "UnitPrice",
                     "type": "DECIMAL",
                     "nullable": false,
-                    "description": "Price per unit of product"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "UnitsInStock",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Current inventory quantity"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "UnitsOnOrder",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Quantity currently ordered"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "ReorderLevel",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Inventory reorder threshold"
+                    "description": "Numeric business metric"
                 },
                 {
                     "name": "Discontinued",
                     "type": "INTEGER",
                     "nullable": false,
-                    "description": "Product discontinued status"
+                    "description": "Numeric business metric"
                 }
             ],
             "foreign_keys": [],
@@ -431,25 +1103,31 @@
                 "Find product details"
             ],
             "nl2sql_metadata": {
-                "table_role": "master",
+                "table_role": "reference",
                 "business_entity": "Product",
                 "relationships": [
                     {
                         "column": "SupplierId",
-                        "references_entity": "Supplier"
+                        "references_entity": "Supplier",
+                        "relationship_source": "heuristic"
                     },
                     {
                         "column": "CategoryId",
-                        "references_entity": "Category"
+                        "references_entity": "Category",
+                        "relationship_source": "heuristic"
                     }
                 ],
                 "date_columns": [],
                 "join_paths": [],
                 "aggregation_columns": [
+                    "Id",
+                    "SupplierId",
+                    "CategoryId",
                     "UnitPrice",
                     "UnitsInStock",
                     "UnitsOnOrder",
-                    "ReorderLevel"
+                    "ReorderLevel",
+                    "Discontinued"
                 ],
                 "primary_entities": [
                     "Id",
@@ -461,13 +1139,417 @@
                     "QuantityPerUnit"
                 ],
                 "filter_columns": [
-                    "CategoryId"
+                    "ProductName",
+                    "QuantityPerUnit"
                 ],
                 "group_by_columns": [
-                    "CategoryId"
+                    "ProductName",
+                    "QuantityPerUnit"
                 ],
                 "sort_columns": [
-                    "UnitPrice"
+                    "Id",
+                    "SupplierId",
+                    "CategoryId",
+                    "UnitPrice",
+                    "UnitsInStock",
+                    "UnitsOnOrder",
+                    "ReorderLevel",
+                    "Discontinued"
+                ]
+            }
+        },
+        {
+            "table_name": "Region",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Region is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 4,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "RegionDescription",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "id",
+                "region",
+                "regiondescription"
+            ],
+            "semantic_tags": [
+                "id",
+                "region",
+                "regiondescription"
+            ],
+            "sample_queries": [
+                "List all region records",
+                "Show total count of region",
+                "Find region details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Region",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Id"
+                ],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "RegionDescription"
+                ],
+                "filter_columns": [
+                    "RegionDescription"
+                ],
+                "group_by_columns": [
+                    "RegionDescription"
+                ],
+                "sort_columns": [
+                    "Id"
+                ]
+            }
+        },
+        {
+            "table_name": "Shipper",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Shipper is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 3,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "CompanyName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Phone",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "companyname",
+                "id",
+                "phone",
+                "shipper"
+            ],
+            "semantic_tags": [
+                "companyname",
+                "id",
+                "phone",
+                "shipper"
+            ],
+            "sample_queries": [
+                "List all shipper records",
+                "Show total count of shipper",
+                "Find shipper details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Shipper",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Id"
+                ],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "CompanyName",
+                    "Phone"
+                ],
+                "filter_columns": [
+                    "CompanyName",
+                    "Phone"
+                ],
+                "group_by_columns": [
+                    "CompanyName",
+                    "Phone"
+                ],
+                "sort_columns": [
+                    "Id"
+                ]
+            }
+        },
+        {
+            "table_name": "Supplier",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Supplier is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 29,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "CompanyName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "ContactName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "ContactTitle",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Address",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "City",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Region",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "PostalCode",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Country",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Phone",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "Fax",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "HomePage",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "address",
+                "city",
+                "companyname",
+                "contactname",
+                "contacttitle",
+                "country",
+                "fax",
+                "homepage",
+                "id",
+                "phone",
+                "postalcode",
+                "region",
+                "supplier"
+            ],
+            "semantic_tags": [
+                "address",
+                "companyname",
+                "contactname",
+                "contacttitle",
+                "id",
+                "supplier"
+            ],
+            "sample_queries": [
+                "List all supplier records",
+                "Show total count of supplier",
+                "Find supplier details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Supplier",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Id"
+                ],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax",
+                    "HomePage"
+                ],
+                "filter_columns": [
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax",
+                    "HomePage"
+                ],
+                "group_by_columns": [
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax",
+                    "HomePage"
+                ],
+                "sort_columns": [
+                    "Id"
+                ]
+            }
+        },
+        {
+            "table_name": "Territory",
+            "schema_version": "1.0",
+            "table_type": "reference",
+            "description": "Territory is a reference table used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 53,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Identifier or relationship column"
+                },
+                {
+                    "name": "TerritoryDescription",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Business attribute"
+                },
+                {
+                    "name": "RegionId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Identifier or relationship column"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "id",
+                "regionid",
+                "territory",
+                "territorydescription"
+            ],
+            "semantic_tags": [
+                "id",
+                "regionid",
+                "territory",
+                "territorydescription"
+            ],
+            "sample_queries": [
+                "List all territory records",
+                "Show total count of territory",
+                "Find territory details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "reference",
+                "business_entity": "Territory",
+                "relationships": [
+                    {
+                        "column": "RegionId",
+                        "references_entity": "Region",
+                        "relationship_source": "heuristic"
+                    }
+                ],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "RegionId"
+                ],
+                "primary_entities": [
+                    "Id",
+                    "RegionId"
+                ],
+                "searchable_columns": [
+                    "Id",
+                    "TerritoryDescription"
+                ],
+                "filter_columns": [
+                    "Id",
+                    "TerritoryDescription"
+                ],
+                "group_by_columns": [
+                    "TerritoryDescription"
+                ],
+                "sort_columns": [
+                    "RegionId"
                 ]
             }
         }

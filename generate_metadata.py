@@ -110,130 +110,53 @@ else:
 
     TABLES = inspector.get_table_names()
 
-# =====================================================
-# DESCRIPTION HELPERS
-# =====================================================
-
-BUSINESS_DICTIONARY = {
-
-    "Id":
-        "Unique identifier",
-
-    "CustomerId":
-        "Unique customer identifier",
-
-    "OrderId":
-        "Unique order identifier",
-
-    "ProductId":
-        "Unique product identifier",
-
-    "EmployeeId":
-        "Unique employee identifier",
-
-    "SupplierId":
-        "Unique supplier identifier",
-
-    "CategoryId":
-        "Unique category identifier",
-
-    "CompanyName":
-        "Customer company name",
-
-    "ContactName":
-        "Primary customer contact",
-
-    "ContactTitle":
-        "Job title of customer contact",
-
-    "Address":
-        "Customer street address",
-
-    "City":
-        "Customer city",
-
-    "Region":
-        "Customer region or state",
-
-    "PostalCode":
-        "Customer postal code",
-
-    "Country":
-        "Customer country",
-
-    "Phone":
-        "Customer phone number",
-
-    "Fax":
-        "Customer fax number",
-
-    "OrderDate":
-        "Date when customer placed order",
-
-    "RequiredDate":
-        "Expected delivery date",
-
-    "ShippedDate":
-        "Actual shipment date",
-
-    "Freight":
-        "Shipping cost",
-
-    "ShipName":
-        "Recipient name",
-
-    "ShipAddress":
-        "Shipping address",
-
-    "ShipCity":
-        "Shipping city",
-
-    "ShipRegion":
-        "Shipping region",
-
-    "ShipPostalCode":
-        "Shipping postal code",
-
-    "ShipCountry":
-        "Shipping country",
-
-    "ProductName":
-        "Product name",
-
-    "QuantityPerUnit":
-        "Packaging quantity per unit",
-
-    "UnitPrice":
-        "Price per unit of product",
-
-    "UnitsInStock":
-        "Current inventory quantity",
-
-    "UnitsOnOrder":
-        "Quantity currently ordered",
-
-    "ReorderLevel":
-        "Inventory reorder threshold",
-
-    "Discontinued":
-        "Product discontinued status"
-}
-
-def generate_table_description(table):
+def generate_table_description(
+    table_name,
+    table_type
+):
 
     return (
-        f"{table} Master contains all "
-        f"{table.lower()} information "
+        f"{table_name} is a "
+        f"{table_type} table "
         f"used in business operations."
     )
 def generate_column_description(
-    column_name
+    column_name,
+    column_type
 ):
 
-    return BUSINESS_DICTIONARY.get(
-        column_name,
-        f"{column_name} field information"
-    )
+    column_type = column_type.lower()
+
+    if column_name.lower().endswith("id"):
+        return "Identifier or relationship column"
+
+    if "date" in column_name.lower():
+        return "Business date field"
+
+    if any(
+        x in column_type
+        for x in [
+            "int",
+            "decimal",
+            "numeric",
+            "float",
+            "double",
+            "real"
+        ]
+    ):
+        return "Numeric business metric"
+
+    if any(
+        x in column_type
+        for x in [
+            "char",
+            "varchar",
+            "text"
+        ]
+    ):
+        return "Business attribute"
+
+    return "Business data field"
 # =====================================================
 # BUSINESS TERMS
 # =====================================================
@@ -281,27 +204,24 @@ def generate_semantic_tags(
 # =====================================================
 # TABLE TYPE
 # =====================================================
-def detect_table_type(table_name):
+def detect_table_type(
+    columns,
+    foreign_keys,
+    row_count
+):
+    """
+    Dynamic table classification
+    """
 
-    name = table_name.lower()
+    fk_count = len(foreign_keys)
 
-    if name in [
-        "customer",
-        "product",
-        "employee",
-        "supplier",
-        "category"
-    ]:
-        return "master"
-
-    if name in [
-        "order",
-        "invoice",
-        "payment"
-    ]:
+    if fk_count >= 2:
         return "transaction"
 
-    return "reference"
+    if fk_count == 0 and row_count < 100:
+        return "reference"
+
+    return "master"
 
 
 # =====================================================
@@ -382,38 +302,26 @@ def generate_sample_queries(
 def get_business_entity(
     table_name,
 ):
+    """
+    Dynamic business entity.
 
-    entity_mapping = {
+    Works for:
+    Customer
+    Order
+    Product
+    MARA
+    VBAK
+    Custom ERP tables
+    """
 
-        "customer":
-            "Customer",
-
-        "order":
-            "Order",
-
-        "product":
-            "Product",
-
-        "employee":
-            "Employee",
-
-        "supplier":
-            "Supplier",
-
-        "category":
-            "Category"
-    }
-
-    return entity_mapping.get(
-        table_name.lower(),
-        table_name
-    )
+    return table_name
 
 def build_nl2sql_metadata(
     table_name,
     columns,
     foreign_keys,
-    primary_keys
+    primary_keys,
+    row_count
 ):
 
     # --------------------------------
@@ -429,22 +337,8 @@ def build_nl2sql_metadata(
     # AGGREGATION COLUMNS
     # --------------------------------
     aggregation_columns = []
-
-    numeric_columns = [
-        "unitprice",
-        "freight",
-        "unitsinstock",
-        "unitsonorder",
-        "reorderlevel",
-        "quantity",
-        "amount",
-        "cost",
-        "total"
-    ]
-
     for c in columns:
 
-        column_name = c["name"].lower()
         column_type = c["type"].lower()
 
         is_numeric = any(
@@ -459,17 +353,12 @@ def build_nl2sql_metadata(
             ]
         )
 
-        if (
-            is_numeric and
-            any(
-                keyword in column_name
-                for keyword in numeric_columns
-            )
-        ):
+        if is_numeric:
             aggregation_columns.append(
                 c["name"]
             )
-
+            
+            
     # --------------------------------
     # JOIN PATHS
     # --------------------------------
@@ -485,42 +374,66 @@ def build_nl2sql_metadata(
     # --------------------------------
     # RELATIONSHIPS
     # --------------------------------
+
     relationships = []
 
-    for c in columns:
+    # First preference:
+    # Actual Foreign Keys
 
-        name = c["name"]
+    if foreign_keys:
 
-        if (
-            name.endswith("Id")
-            and name != "Id"
-        ):
+        for fk in foreign_keys:
+
             relationships.append(
                 {
-                    "column": name,
+                    "column":
+                        fk["column"],
+
                     "references_entity":
-                        name.replace("Id", "")
+                        fk["references_table"],
+
+                    "relationship_source":
+                        "foreign_key"
                 }
             )
 
+    # Fallback:
+    # Heuristic detection
+
+    else:
+
+        for c in columns:
+
+            name = c["name"]
+
+            if (
+                name.endswith("Id")
+                and name != "Id"
+            ):
+
+                relationships.append(
+                    {
+                        "column":
+                            name,
+
+                        "references_entity":
+                            name.replace(
+                                "Id",
+                                ""
+                            ),
+
+                        "relationship_source":
+                            "heuristic"
+                    }
+                )
     # --------------------------------
     # PRIMARY ENTITIES
     # --------------------------------
     primary_entities = []
 
-    entity_columns = [
-        "id",
-        "customerid",
-        "productid",
-        "orderid",
-        "employeeid",
-        "supplierid",
-        "categoryid"
-    ]
-
     for c in columns:
 
-        if c["name"].lower() in entity_columns:
+        if c["name"].lower().endswith("id"):
 
             primary_entities.append(
                 c["name"]
@@ -530,7 +443,9 @@ def build_nl2sql_metadata(
 
         if pk not in primary_entities:
 
-            primary_entities.append(pk)
+            primary_entities.append(
+                pk
+            )
 
     # --------------------------------
     # SEARCHABLE COLUMNS
@@ -555,79 +470,111 @@ def build_nl2sql_metadata(
     # --------------------------------
     filter_columns = []
 
-    filter_keywords = [
-        "date",
-        "country",
-        "city",
-        "region",
-        "status",
-        "category"
-    ]
-
     for c in columns:
 
-        column_name = c["name"].lower()
+        column_name = c["name"]
 
-        if any(
-            keyword in column_name
-            for keyword in filter_keywords
+        column_type = c["type"].lower()
+
+        is_string = any(
+            x in column_type
+            for x in [
+                "char",
+                "text",
+                "varchar"
+            ]
+        )
+
+        is_date = (
+            "date" in column_type
+        )
+
+        is_fk = any(
+            fk["column"] == column_name
+            for fk in foreign_keys
+        )
+
+        if (
+            is_string
+            or is_date
+            or is_fk
         ):
             filter_columns.append(
-                c["name"]
+                column_name
             )
     # --------------------------------
     # GROUP BY COLUMNS
     # --------------------------------
     group_by_columns = []
 
-    group_keywords = [
-        "country",
-        "city",
-        "region",
-        "category"
-    ]
-
     for c in columns:
 
-        column_name = c["name"].lower()
+        column_name = c["name"]
 
-        if any(
-            keyword in column_name
-            for keyword in group_keywords
+        column_type = c["type"].lower()
+
+        is_string = any(
+            x in column_type
+            for x in [
+                "char",
+                "text",
+                "varchar"
+            ]
+        )
+
+        is_primary_key = (
+            column_name
+            in primary_keys
+        )
+
+        if (
+            is_string
+            and not is_primary_key
         ):
             group_by_columns.append(
-                c["name"]
+                column_name
             )
-
     # --------------------------------
     # SORT COLUMNS
     # --------------------------------
     sort_columns = []
 
-    sort_keywords = [
-        "date",
-        "price",
-        "amount",
-        "freight"
-    ]
-
     for c in columns:
 
-        column_name = c["name"].lower()
+        column_name = c["name"]
 
-        if any(
-            keyword in column_name
-            for keyword in sort_keywords
+        column_type = c["type"].lower()
+
+        is_numeric = any(
+            x in column_type
+            for x in [
+                "int",
+                "decimal",
+                "numeric",
+                "float",
+                "double",
+                "real"
+            ]
+        )
+
+        is_date = (
+            "date" in column_type
+        )
+
+        if (
+            is_numeric
+            or is_date
         ):
             sort_columns.append(
-                c["name"]
+                column_name
             )
-
+            
     return {
-
         "table_role":
             detect_table_type(
-                table_name
+                columns,
+                foreign_keys,
+                row_count
             ),
 
         "business_entity":
@@ -695,7 +642,8 @@ for table in TABLES:
             "type": str(c["type"]),
             "nullable": c["nullable"],
             "description": generate_column_description(
-                c["name"]
+                c["name"],
+                str(c["type"])
             )
         })
 
@@ -721,6 +669,11 @@ for table in TABLES:
             "references_column":
                 fk["referred_columns"][0]
         })
+        
+    row_count = get_row_count(
+        engine,
+        table
+    )
 
     metadata["tables"].append({
 
@@ -729,12 +682,19 @@ for table in TABLES:
         "schema_version": "1.0",
 
         "table_type": detect_table_type(
-            table
+            columns,
+            foreign_keys,
+            row_count
         ),
 
         "description":
             generate_table_description(
-                table
+                table,
+                detect_table_type(
+                    columns,
+                    foreign_keys,
+                    row_count
+                )
             ),
 
         "primary_key":
@@ -744,10 +704,7 @@ for table in TABLES:
             ),
 
         "row_count":
-            get_row_count(
-                engine,
-                table
-            ),
+            row_count,
 
         "columns": columns,
 
@@ -784,7 +741,8 @@ for table in TABLES:
                 get_primary_keys(
                     inspector,
                     table
-                )
+                ),
+                row_count
             )
     })
 
