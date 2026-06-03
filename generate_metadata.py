@@ -353,7 +353,10 @@ def build_nl2sql_metadata(
             ]
         )
 
-        if is_numeric:
+        if (
+        is_numeric
+            and not c["name"].lower().endswith("id")
+        ):
             aggregation_columns.append(
                 c["name"]
             )
@@ -457,9 +460,12 @@ def build_nl2sql_metadata(
         column_type = c["type"].lower()
 
         if (
-            "char" in column_type
-            or "text" in column_type
-            or "varchar" in column_type
+            (
+                "char" in column_type
+                or "text" in column_type
+                or "varchar" in column_type
+            )
+            and not c["name"].lower().endswith("id")
         ):
             searchable_columns.append(
                 c["name"]
@@ -527,9 +533,14 @@ def build_nl2sql_metadata(
             in primary_keys
         )
 
+        is_date_column = (
+            "date" in column_name.lower()
+        )
+
         if (
             is_string
             and not is_primary_key
+            and not is_date_column
         ):
             group_by_columns.append(
                 column_name

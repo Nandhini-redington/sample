@@ -56,9 +56,7 @@
                 "relationships": [],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "Id"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id"
                 ],
@@ -196,7 +194,6 @@
                     "Id"
                 ],
                 "searchable_columns": [
-                    "Id",
                     "CompanyName",
                     "ContactName",
                     "ContactTitle",
@@ -293,10 +290,7 @@
                     "Id",
                     "CustomerTypeId"
                 ],
-                "searchable_columns": [
-                    "Id",
-                    "CustomerTypeId"
-                ],
+                "searchable_columns": [],
                 "filter_columns": [
                     "Id",
                     "CustomerTypeId"
@@ -358,7 +352,6 @@
                     "Id"
                 ],
                 "searchable_columns": [
-                    "Id",
                     "CustomerDesc"
                 ],
                 "filter_columns": [
@@ -532,7 +525,6 @@
                 ],
                 "join_paths": [],
                 "aggregation_columns": [
-                    "Id",
                     "ReportsTo"
                 ],
                 "primary_entities": [
@@ -577,8 +569,6 @@
                     "FirstName",
                     "Title",
                     "TitleOfCourtesy",
-                    "BirthDate",
-                    "HireDate",
                     "Address",
                     "City",
                     "Region",
@@ -660,18 +650,13 @@
                 ],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "EmployeeId"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id",
                     "EmployeeId",
                     "TerritoryId"
                 ],
-                "searchable_columns": [
-                    "Id",
-                    "TerritoryId"
-                ],
+                "searchable_columns": [],
                 "filter_columns": [
                     "Id",
                     "TerritoryId"
@@ -833,8 +818,6 @@
                 ],
                 "join_paths": [],
                 "aggregation_columns": [
-                    "Id",
-                    "EmployeeId",
                     "ShipVia",
                     "Freight"
                 ],
@@ -844,7 +827,6 @@
                     "EmployeeId"
                 ],
                 "searchable_columns": [
-                    "CustomerId",
                     "OrderDate",
                     "RequiredDate",
                     "ShippedDate",
@@ -869,9 +851,6 @@
                 ],
                 "group_by_columns": [
                     "CustomerId",
-                    "OrderDate",
-                    "RequiredDate",
-                    "ShippedDate",
                     "ShipName",
                     "ShipAddress",
                     "ShipCity",
@@ -976,8 +955,6 @@
                 "date_columns": [],
                 "join_paths": [],
                 "aggregation_columns": [
-                    "OrderId",
-                    "ProductId",
                     "UnitPrice",
                     "Quantity",
                     "Discount"
@@ -987,9 +964,7 @@
                     "OrderId",
                     "ProductId"
                 ],
-                "searchable_columns": [
-                    "Id"
-                ],
+                "searchable_columns": [],
                 "filter_columns": [
                     "Id"
                 ],
@@ -1120,9 +1095,6 @@
                 "date_columns": [],
                 "join_paths": [],
                 "aggregation_columns": [
-                    "Id",
-                    "SupplierId",
-                    "CategoryId",
                     "UnitPrice",
                     "UnitsInStock",
                     "UnitsOnOrder",
@@ -1204,9 +1176,7 @@
                 "relationships": [],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "Id"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id"
                 ],
@@ -1278,9 +1248,7 @@
                 "relationships": [],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "Id"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id"
                 ],
@@ -1420,9 +1388,7 @@
                 "relationships": [],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "Id"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id"
                 ],
@@ -1530,15 +1496,12 @@
                 ],
                 "date_columns": [],
                 "join_paths": [],
-                "aggregation_columns": [
-                    "RegionId"
-                ],
+                "aggregation_columns": [],
                 "primary_entities": [
                     "Id",
                     "RegionId"
                 ],
                 "searchable_columns": [
-                    "Id",
                     "TerritoryDescription"
                 ],
                 "filter_columns": [

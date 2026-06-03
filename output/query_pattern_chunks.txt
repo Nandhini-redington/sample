@@ -1,24 +1,168 @@
 QUERY PATTERN
+Table: Category
+Pattern Type: group_by
+Columns: CategoryName, Description
+Retrieval Text: Category supports group_by analysis using columns CategoryName, Description.
+
+================================================================================
+
+QUERY PATTERN
+Table: Category
+Pattern Type: filtering
+Columns: CategoryName, Description
+Retrieval Text: Category supports filtering analysis using columns CategoryName, Description.
+
+================================================================================
+
+QUERY PATTERN
+Table: Category
+Pattern Type: sorting
+Columns: Id
+Retrieval Text: Category supports sorting analysis using columns Id.
+
+================================================================================
+
+QUERY PATTERN
+Table: Category
+Pattern Type: search
+Columns: CategoryName, Description
+Retrieval Text: Category supports search analysis using columns CategoryName, Description.
+
+================================================================================
+
+QUERY PATTERN
 Table: Customer
 Pattern Type: group_by
-Columns: City, Region, Country
-Description: Customer supports group_by queries
+Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+Retrieval Text: Customer supports group_by analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Customer
 Pattern Type: filtering
-Columns: City, Region, Country
-Description: Customer supports filtering queries
+Columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+Retrieval Text: Customer supports filtering analysis using columns Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Customer
 Pattern Type: search
-Columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
-Description: Customer supports search queries
+Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+Retrieval Text: Customer supports search analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
+
+================================================================================
+
+QUERY PATTERN
+Table: CustomerCustomerDemo
+Pattern Type: group_by
+Columns: CustomerTypeId
+Retrieval Text: CustomerCustomerDemo supports group_by analysis using columns CustomerTypeId.
+
+================================================================================
+
+QUERY PATTERN
+Table: CustomerCustomerDemo
+Pattern Type: filtering
+Columns: Id, CustomerTypeId
+Retrieval Text: CustomerCustomerDemo supports filtering analysis using columns Id, CustomerTypeId.
+
+================================================================================
+
+QUERY PATTERN
+Table: CustomerDemographic
+Pattern Type: group_by
+Columns: CustomerDesc
+Retrieval Text: CustomerDemographic supports group_by analysis using columns CustomerDesc.
+
+================================================================================
+
+QUERY PATTERN
+Table: CustomerDemographic
+Pattern Type: filtering
+Columns: Id, CustomerDesc
+Retrieval Text: CustomerDemographic supports filtering analysis using columns Id, CustomerDesc.
+
+================================================================================
+
+QUERY PATTERN
+Table: CustomerDemographic
+Pattern Type: search
+Columns: CustomerDesc
+Retrieval Text: CustomerDemographic supports search analysis using columns CustomerDesc.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: time_series
+Columns: BirthDate, HireDate
+Retrieval Text: Employee supports time_series analysis using columns BirthDate, HireDate.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: aggregation
+Columns: ReportsTo
+Retrieval Text: Employee supports aggregation analysis using columns ReportsTo.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: group_by
+Columns: LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+Retrieval Text: Employee supports group_by analysis using columns LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: filtering
+Columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+Retrieval Text: Employee supports filtering analysis using columns LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: sorting
+Columns: Id, ReportsTo
+Retrieval Text: Employee supports sorting analysis using columns Id, ReportsTo.
+
+================================================================================
+
+QUERY PATTERN
+Table: Employee
+Pattern Type: search
+Columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+Retrieval Text: Employee supports search analysis using columns LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
+
+================================================================================
+
+QUERY PATTERN
+Table: EmployeeTerritory
+Pattern Type: group_by
+Columns: TerritoryId
+Retrieval Text: EmployeeTerritory supports group_by analysis using columns TerritoryId.
+
+================================================================================
+
+QUERY PATTERN
+Table: EmployeeTerritory
+Pattern Type: filtering
+Columns: Id, TerritoryId
+Retrieval Text: EmployeeTerritory supports filtering analysis using columns Id, TerritoryId.
+
+================================================================================
+
+QUERY PATTERN
+Table: EmployeeTerritory
+Pattern Type: sorting
+Columns: EmployeeId
+Retrieval Text: EmployeeTerritory supports sorting analysis using columns EmployeeId.
 
 ================================================================================
 
@@ -26,79 +170,103 @@ QUERY PATTERN
 Table: Order
 Pattern Type: time_series
 Columns: OrderDate, RequiredDate, ShippedDate
-Description: Order supports time_series queries
+Retrieval Text: Order supports time_series analysis using columns OrderDate, RequiredDate, ShippedDate.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Order
 Pattern Type: aggregation
-Columns: Freight
-Description: Order supports aggregation queries
+Columns: ShipVia, Freight
+Retrieval Text: Order supports aggregation analysis using columns ShipVia, Freight.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Order
 Pattern Type: group_by
-Columns: ShipCity, ShipRegion, ShipCountry
-Description: Order supports group_by queries
+Columns: CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+Retrieval Text: Order supports group_by analysis using columns CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Order
 Pattern Type: filtering
-Columns: OrderDate, RequiredDate, ShippedDate, ShipCity, ShipRegion, ShipCountry
-Description: Order supports filtering queries
+Columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+Retrieval Text: Order supports filtering analysis using columns CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Order
 Pattern Type: sorting
-Columns: OrderDate, RequiredDate, ShippedDate, Freight
-Description: Order supports sorting queries
+Columns: Id, EmployeeId, ShipVia, Freight
+Retrieval Text: Order supports sorting analysis using columns Id, EmployeeId, ShipVia, Freight.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Order
 Pattern Type: search
-Columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
-Description: Order supports search queries
+Columns: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+Retrieval Text: Order supports search analysis using columns OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
+
+================================================================================
+
+QUERY PATTERN
+Table: OrderDetail
+Pattern Type: aggregation
+Columns: UnitPrice, Quantity, Discount
+Retrieval Text: OrderDetail supports aggregation analysis using columns UnitPrice, Quantity, Discount.
+
+================================================================================
+
+QUERY PATTERN
+Table: OrderDetail
+Pattern Type: filtering
+Columns: Id
+Retrieval Text: OrderDetail supports filtering analysis using columns Id.
+
+================================================================================
+
+QUERY PATTERN
+Table: OrderDetail
+Pattern Type: sorting
+Columns: OrderId, ProductId, UnitPrice, Quantity, Discount
+Retrieval Text: OrderDetail supports sorting analysis using columns OrderId, ProductId, UnitPrice, Quantity, Discount.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Product
 Pattern Type: aggregation
-Columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel
-Description: Product supports aggregation queries
+Columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+Retrieval Text: Product supports aggregation analysis using columns UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Product
 Pattern Type: group_by
-Columns: CategoryId
-Description: Product supports group_by queries
+Columns: ProductName, QuantityPerUnit
+Retrieval Text: Product supports group_by analysis using columns ProductName, QuantityPerUnit.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Product
 Pattern Type: filtering
-Columns: CategoryId
-Description: Product supports filtering queries
+Columns: ProductName, QuantityPerUnit
+Retrieval Text: Product supports filtering analysis using columns ProductName, QuantityPerUnit.
 
 ================================================================================
 
 QUERY PATTERN
 Table: Product
 Pattern Type: sorting
-Columns: UnitPrice
-Description: Product supports sorting queries
+Columns: Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+Retrieval Text: Product supports sorting analysis using columns Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued.
 
 ================================================================================
 
@@ -106,7 +274,135 @@ QUERY PATTERN
 Table: Product
 Pattern Type: search
 Columns: ProductName, QuantityPerUnit
-Description: Product supports search queries
+Retrieval Text: Product supports search analysis using columns ProductName, QuantityPerUnit.
+
+================================================================================
+
+QUERY PATTERN
+Table: Region
+Pattern Type: group_by
+Columns: RegionDescription
+Retrieval Text: Region supports group_by analysis using columns RegionDescription.
+
+================================================================================
+
+QUERY PATTERN
+Table: Region
+Pattern Type: filtering
+Columns: RegionDescription
+Retrieval Text: Region supports filtering analysis using columns RegionDescription.
+
+================================================================================
+
+QUERY PATTERN
+Table: Region
+Pattern Type: sorting
+Columns: Id
+Retrieval Text: Region supports sorting analysis using columns Id.
+
+================================================================================
+
+QUERY PATTERN
+Table: Region
+Pattern Type: search
+Columns: RegionDescription
+Retrieval Text: Region supports search analysis using columns RegionDescription.
+
+================================================================================
+
+QUERY PATTERN
+Table: Shipper
+Pattern Type: group_by
+Columns: CompanyName, Phone
+Retrieval Text: Shipper supports group_by analysis using columns CompanyName, Phone.
+
+================================================================================
+
+QUERY PATTERN
+Table: Shipper
+Pattern Type: filtering
+Columns: CompanyName, Phone
+Retrieval Text: Shipper supports filtering analysis using columns CompanyName, Phone.
+
+================================================================================
+
+QUERY PATTERN
+Table: Shipper
+Pattern Type: sorting
+Columns: Id
+Retrieval Text: Shipper supports sorting analysis using columns Id.
+
+================================================================================
+
+QUERY PATTERN
+Table: Shipper
+Pattern Type: search
+Columns: CompanyName, Phone
+Retrieval Text: Shipper supports search analysis using columns CompanyName, Phone.
+
+================================================================================
+
+QUERY PATTERN
+Table: Supplier
+Pattern Type: group_by
+Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+Retrieval Text: Supplier supports group_by analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
+
+================================================================================
+
+QUERY PATTERN
+Table: Supplier
+Pattern Type: filtering
+Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+Retrieval Text: Supplier supports filtering analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
+
+================================================================================
+
+QUERY PATTERN
+Table: Supplier
+Pattern Type: sorting
+Columns: Id
+Retrieval Text: Supplier supports sorting analysis using columns Id.
+
+================================================================================
+
+QUERY PATTERN
+Table: Supplier
+Pattern Type: search
+Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+Retrieval Text: Supplier supports search analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
+
+================================================================================
+
+QUERY PATTERN
+Table: Territory
+Pattern Type: group_by
+Columns: TerritoryDescription
+Retrieval Text: Territory supports group_by analysis using columns TerritoryDescription.
+
+================================================================================
+
+QUERY PATTERN
+Table: Territory
+Pattern Type: filtering
+Columns: Id, TerritoryDescription
+Retrieval Text: Territory supports filtering analysis using columns Id, TerritoryDescription.
+
+================================================================================
+
+QUERY PATTERN
+Table: Territory
+Pattern Type: sorting
+Columns: RegionId
+Retrieval Text: Territory supports sorting analysis using columns RegionId.
+
+================================================================================
+
+QUERY PATTERN
+Table: Territory
+Pattern Type: search
+Columns: TerritoryDescription
+Retrieval Text: Territory supports search analysis using columns TerritoryDescription.
 
 ================================================================================
 

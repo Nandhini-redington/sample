@@ -1,9 +1,36 @@
 JOIN RELATIONSHIP
+Source Table: CustomerCustomerDemo
+Target Entity: CustomerType
+Join Column: CustomerTypeId
+Relationship Type: entity_reference
+Retrieval Text: CustomerCustomerDemo can be joined with CustomerType using CustomerTypeId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: EmployeeTerritory
+Target Entity: Employee
+Join Column: EmployeeId
+Relationship Type: entity_reference
+Retrieval Text: EmployeeTerritory can be joined with Employee using EmployeeId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: EmployeeTerritory
+Target Entity: Territory
+Join Column: TerritoryId
+Relationship Type: entity_reference
+Retrieval Text: EmployeeTerritory can be joined with Territory using TerritoryId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
 Source Table: Order
 Target Entity: Customer
 Join Column: CustomerId
 Relationship Type: entity_reference
-Description: Order references Customer using CustomerId
+Retrieval Text: Order can be joined with Customer using CustomerId. This relationship enables cross-table business analysis.
 
 ================================================================================
 
@@ -12,7 +39,25 @@ Source Table: Order
 Target Entity: Employee
 Join Column: EmployeeId
 Relationship Type: entity_reference
-Description: Order references Employee using EmployeeId
+Retrieval Text: Order can be joined with Employee using EmployeeId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: OrderDetail
+Target Entity: Order
+Join Column: OrderId
+Relationship Type: entity_reference
+Retrieval Text: OrderDetail can be joined with Order using OrderId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: OrderDetail
+Target Entity: Product
+Join Column: ProductId
+Relationship Type: entity_reference
+Retrieval Text: OrderDetail can be joined with Product using ProductId. This relationship enables cross-table business analysis.
 
 ================================================================================
 
@@ -21,7 +66,7 @@ Source Table: Product
 Target Entity: Supplier
 Join Column: SupplierId
 Relationship Type: entity_reference
-Description: Product references Supplier using SupplierId
+Retrieval Text: Product can be joined with Supplier using SupplierId. This relationship enables cross-table business analysis.
 
 ================================================================================
 
@@ -30,7 +75,16 @@ Source Table: Product
 Target Entity: Category
 Join Column: CategoryId
 Relationship Type: entity_reference
-Description: Product references Category using CategoryId
+Retrieval Text: Product can be joined with Category using CategoryId. This relationship enables cross-table business analysis.
+
+================================================================================
+
+JOIN RELATIONSHIP
+Source Table: Territory
+Target Entity: Region
+Join Column: RegionId
+Relationship Type: entity_reference
+Retrieval Text: Territory can be joined with Region using RegionId. This relationship enables cross-table business analysis.
 
 ================================================================================
 
