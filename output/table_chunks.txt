@@ -1,0 +1,39 @@
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Customer
+TABLE_DESCRIPTION: Customer Master contains all customer information used in business operations.
+TABLE_TYPE: master
+BUSINESS_ENTITY: Customer
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: address, companyname, contactname, contacttitle, customer, id
+RETRIEVAL_TEXT: customer customer master contains all customer information used in business operations. customer address companyname contactname contacttitle customer id
+============================================================
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Order
+TABLE_DESCRIPTION: Order Master contains all order information used in business operations.
+TABLE_TYPE: transaction
+BUSINESS_ENTITY: Order
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: customerid, employeeid, id, order, orderdate, requireddate
+RETRIEVAL_TEXT: order order master contains all order information used in business operations. order customerid employeeid id order orderdate requireddate
+============================================================
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Product
+TABLE_DESCRIPTION: Product Master contains all product information used in business operations.
+TABLE_TYPE: master
+BUSINESS_ENTITY: Product
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: categoryid, id, product, productname, quantityperunit, supplierid
+RETRIEVAL_TEXT: product product master contains all product information used in business operations. product categoryid id product productname quantityperunit supplierid
+============================================================

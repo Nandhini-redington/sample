@@ -1,0 +1,65 @@
+[
+  {
+    "chunk_type": "table_entity",
+    "table_name": "Customer",
+    "table_description": "Customer Master contains all customer information used in business operations.",
+    "table_type": "master",
+    "business_entity": "Customer",
+    "primary_key": [
+      "Id"
+    ],
+    "foreign_keys": [],
+    "related_tables": [],
+    "semantic_tags": [
+      "address",
+      "companyname",
+      "contactname",
+      "contacttitle",
+      "customer",
+      "id"
+    ],
+    "retrieval_text": "customer customer master contains all customer information used in business operations. customer address companyname contactname contacttitle customer id"
+  },
+  {
+    "chunk_type": "table_entity",
+    "table_name": "Order",
+    "table_description": "Order Master contains all order information used in business operations.",
+    "table_type": "transaction",
+    "business_entity": "Order",
+    "primary_key": [
+      "Id"
+    ],
+    "foreign_keys": [],
+    "related_tables": [],
+    "semantic_tags": [
+      "customerid",
+      "employeeid",
+      "id",
+      "order",
+      "orderdate",
+      "requireddate"
+    ],
+    "retrieval_text": "order order master contains all order information used in business operations. order customerid employeeid id order orderdate requireddate"
+  },
+  {
+    "chunk_type": "table_entity",
+    "table_name": "Product",
+    "table_description": "Product Master contains all product information used in business operations.",
+    "table_type": "master",
+    "business_entity": "Product",
+    "primary_key": [
+      "Id"
+    ],
+    "foreign_keys": [],
+    "related_tables": [],
+    "semantic_tags": [
+      "categoryid",
+      "id",
+      "product",
+      "productname",
+      "quantityperunit",
+      "supplierid"
+    ],
+    "retrieval_text": "product product master contains all product information used in business operations. product categoryid id product productname quantityperunit supplierid"
+  }
+]

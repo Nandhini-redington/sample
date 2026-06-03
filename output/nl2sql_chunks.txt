@@ -1,0 +1,471 @@
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Customer
+TABLE_DESCRIPTION: Customer Master contains all customer information used in business operations.
+TABLE_TYPE: master
+BUSINESS_ENTITY: Customer
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: address, companyname, contactname, contacttitle, customer, id
+RETRIEVAL_TEXT: customer customer master contains all customer information used in business operations. customer address companyname contactname contacttitle customer id
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: customer id identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: City
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: customer city filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Region
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: customer region filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Country
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: customer country filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Id
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer id search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer companyname search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer contactname search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactTitle
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer contacttitle search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Address
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer address search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: City
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer city search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Region
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer region search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer postalcode search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Country
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer country search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Phone
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer phone search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Fax
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: customer fax search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Order
+TABLE_DESCRIPTION: Order Master contains all order information used in business operations.
+TABLE_TYPE: transaction
+BUSINESS_ENTITY: Order
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: customerid, employeeid, id, order, orderdate, requireddate
+RETRIEVAL_TEXT: order order master contains all order information used in business operations. order customerid employeeid id order orderdate requireddate
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: order id identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: CustomerId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: order customerid identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: EmployeeId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: order employeeid identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: Freight
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: order freight aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: OrderDate
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order orderdate filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: RequiredDate
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order requireddate filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShippedDate
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order shippeddate filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCity
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order shipcity filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipRegion
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order shipregion filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCountry
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: order shipcountry filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: OrderDate
+COLUMN_ROLE: temporal
+NL_MEANING: date time used for ordering and time filtering
+RETRIEVAL_TEXT: order orderdate temporal date time used for ordering and time filtering date time timestamp order
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: RequiredDate
+COLUMN_ROLE: temporal
+NL_MEANING: date time used for ordering and time filtering
+RETRIEVAL_TEXT: order requireddate temporal date time used for ordering and time filtering date time timestamp order
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShippedDate
+COLUMN_ROLE: temporal
+NL_MEANING: date time used for ordering and time filtering
+RETRIEVAL_TEXT: order shippeddate temporal date time used for ordering and time filtering date time timestamp order
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: CustomerId
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order customerid search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: OrderDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order orderdate search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: RequiredDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order requireddate search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShippedDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shippeddate search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shipname search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipAddress
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shipaddress search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCity
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shipcity search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipRegion
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shipregion search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipPostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shippostalcode search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCountry
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: order shipcountry search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: table_entity
+TABLE_NAME: Product
+TABLE_DESCRIPTION: Product Master contains all product information used in business operations.
+TABLE_TYPE: master
+BUSINESS_ENTITY: Product
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: categoryid, id, product, productname, quantityperunit, supplierid
+RETRIEVAL_TEXT: product product master contains all product information used in business operations. product categoryid id product productname quantityperunit supplierid
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: product id identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: SupplierId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: product supplierid identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: CategoryId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: product categoryid identity unique identifier primary key join key id identifier key
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: UnitPrice
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: product unitprice aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: UnitsInStock
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: product unitsinstock aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: UnitsOnOrder
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: product unitsonorder aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: ReorderLevel
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: product reorderlevel aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: CategoryId
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: product categoryid filter used in where clause filtering conditions equals condition filter search
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: ProductName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: product productname search text field used for like search matching text name description string
+============================================================
+
+============================================================
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: QuantityPerUnit
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: product quantityperunit search text field used for like search matching text name description string
+============================================================

@@ -1,0 +1,475 @@
+{
+    "domain": "salestest",
+    "schema_version": "1.0",
+    "tables": [
+        {
+            "table_name": "Customer",
+            "schema_version": "1.0",
+            "table_type": "master",
+            "description": "Customer Master contains all customer information used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 91,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Unique identifier"
+                },
+                {
+                    "name": "CompanyName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer company name"
+                },
+                {
+                    "name": "ContactName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Primary customer contact"
+                },
+                {
+                    "name": "ContactTitle",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Job title of customer contact"
+                },
+                {
+                    "name": "Address",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer street address"
+                },
+                {
+                    "name": "City",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer city"
+                },
+                {
+                    "name": "Region",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer region or state"
+                },
+                {
+                    "name": "PostalCode",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer postal code"
+                },
+                {
+                    "name": "Country",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer country"
+                },
+                {
+                    "name": "Phone",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer phone number"
+                },
+                {
+                    "name": "Fax",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Customer fax number"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "address",
+                "city",
+                "companyname",
+                "contactname",
+                "contacttitle",
+                "country",
+                "customer",
+                "fax",
+                "id",
+                "phone",
+                "postalcode",
+                "region"
+            ],
+            "semantic_tags": [
+                "address",
+                "companyname",
+                "contactname",
+                "contacttitle",
+                "customer",
+                "id"
+            ],
+            "sample_queries": [
+                "List all customer records",
+                "Show total count of customer",
+                "Find customer details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "master",
+                "business_entity": "Customer",
+                "relationships": [],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [],
+                "primary_entities": [
+                    "Id"
+                ],
+                "searchable_columns": [
+                    "Id",
+                    "CompanyName",
+                    "ContactName",
+                    "ContactTitle",
+                    "Address",
+                    "City",
+                    "Region",
+                    "PostalCode",
+                    "Country",
+                    "Phone",
+                    "Fax"
+                ],
+                "filter_columns": [
+                    "City",
+                    "Region",
+                    "Country"
+                ],
+                "group_by_columns": [
+                    "City",
+                    "Region",
+                    "Country"
+                ],
+                "sort_columns": []
+            }
+        },
+        {
+            "table_name": "Order",
+            "schema_version": "1.0",
+            "table_type": "transaction",
+            "description": "Order Master contains all order information used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 830,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Unique identifier"
+                },
+                {
+                    "name": "CustomerId",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Unique customer identifier"
+                },
+                {
+                    "name": "EmployeeId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Unique employee identifier"
+                },
+                {
+                    "name": "OrderDate",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Date when customer placed order"
+                },
+                {
+                    "name": "RequiredDate",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Expected delivery date"
+                },
+                {
+                    "name": "ShippedDate",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Actual shipment date"
+                },
+                {
+                    "name": "ShipVia",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "ShipVia field information"
+                },
+                {
+                    "name": "Freight",
+                    "type": "DECIMAL",
+                    "nullable": false,
+                    "description": "Shipping cost"
+                },
+                {
+                    "name": "ShipName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Recipient name"
+                },
+                {
+                    "name": "ShipAddress",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Shipping address"
+                },
+                {
+                    "name": "ShipCity",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Shipping city"
+                },
+                {
+                    "name": "ShipRegion",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Shipping region"
+                },
+                {
+                    "name": "ShipPostalCode",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Shipping postal code"
+                },
+                {
+                    "name": "ShipCountry",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Shipping country"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "customerid",
+                "employeeid",
+                "freight",
+                "id",
+                "order",
+                "orderdate",
+                "requireddate",
+                "shipaddress",
+                "shipcity",
+                "shipcountry",
+                "shipname",
+                "shippeddate",
+                "shippostalcode",
+                "shipregion",
+                "shipvia"
+            ],
+            "semantic_tags": [
+                "customerid",
+                "employeeid",
+                "id",
+                "order",
+                "orderdate",
+                "requireddate"
+            ],
+            "sample_queries": [
+                "List all order records",
+                "Show total count of order",
+                "Find order details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "transaction",
+                "business_entity": "Order",
+                "relationships": [
+                    {
+                        "column": "CustomerId",
+                        "references_entity": "Customer"
+                    },
+                    {
+                        "column": "EmployeeId",
+                        "references_entity": "Employee"
+                    }
+                ],
+                "date_columns": [
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate"
+                ],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "Freight"
+                ],
+                "primary_entities": [
+                    "Id",
+                    "CustomerId",
+                    "EmployeeId"
+                ],
+                "searchable_columns": [
+                    "CustomerId",
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate",
+                    "ShipName",
+                    "ShipAddress",
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipPostalCode",
+                    "ShipCountry"
+                ],
+                "filter_columns": [
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate",
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipCountry"
+                ],
+                "group_by_columns": [
+                    "ShipCity",
+                    "ShipRegion",
+                    "ShipCountry"
+                ],
+                "sort_columns": [
+                    "OrderDate",
+                    "RequiredDate",
+                    "ShippedDate",
+                    "Freight"
+                ]
+            }
+        },
+        {
+            "table_name": "Product",
+            "schema_version": "1.0",
+            "table_type": "master",
+            "description": "Product Master contains all product information used in business operations.",
+            "primary_key": [
+                "Id"
+            ],
+            "row_count": 77,
+            "columns": [
+                {
+                    "name": "Id",
+                    "type": "INTEGER",
+                    "nullable": true,
+                    "description": "Unique identifier"
+                },
+                {
+                    "name": "ProductName",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Product name"
+                },
+                {
+                    "name": "SupplierId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Unique supplier identifier"
+                },
+                {
+                    "name": "CategoryId",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Unique category identifier"
+                },
+                {
+                    "name": "QuantityPerUnit",
+                    "type": "VARCHAR(8000)",
+                    "nullable": true,
+                    "description": "Packaging quantity per unit"
+                },
+                {
+                    "name": "UnitPrice",
+                    "type": "DECIMAL",
+                    "nullable": false,
+                    "description": "Price per unit of product"
+                },
+                {
+                    "name": "UnitsInStock",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Current inventory quantity"
+                },
+                {
+                    "name": "UnitsOnOrder",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Quantity currently ordered"
+                },
+                {
+                    "name": "ReorderLevel",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Inventory reorder threshold"
+                },
+                {
+                    "name": "Discontinued",
+                    "type": "INTEGER",
+                    "nullable": false,
+                    "description": "Product discontinued status"
+                }
+            ],
+            "foreign_keys": [],
+            "related_tables": [],
+            "business_terms": [
+                "categoryid",
+                "discontinued",
+                "id",
+                "product",
+                "productname",
+                "quantityperunit",
+                "reorderlevel",
+                "supplierid",
+                "unitprice",
+                "unitsinstock",
+                "unitsonorder"
+            ],
+            "semantic_tags": [
+                "categoryid",
+                "id",
+                "product",
+                "productname",
+                "quantityperunit",
+                "supplierid"
+            ],
+            "sample_queries": [
+                "List all product records",
+                "Show total count of product",
+                "Find product details"
+            ],
+            "nl2sql_metadata": {
+                "table_role": "master",
+                "business_entity": "Product",
+                "relationships": [
+                    {
+                        "column": "SupplierId",
+                        "references_entity": "Supplier"
+                    },
+                    {
+                        "column": "CategoryId",
+                        "references_entity": "Category"
+                    }
+                ],
+                "date_columns": [],
+                "join_paths": [],
+                "aggregation_columns": [
+                    "UnitPrice",
+                    "UnitsInStock",
+                    "UnitsOnOrder",
+                    "ReorderLevel"
+                ],
+                "primary_entities": [
+                    "Id",
+                    "SupplierId",
+                    "CategoryId"
+                ],
+                "searchable_columns": [
+                    "ProductName",
+                    "QuantityPerUnit"
+                ],
+                "filter_columns": [
+                    "CategoryId"
+                ],
+                "group_by_columns": [
+                    "CategoryId"
+                ],
+                "sort_columns": [
+                    "UnitPrice"
+                ]
+            }
+        }
+    ]
+}
