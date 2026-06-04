@@ -1,90 +1,100 @@
-JOIN RELATIONSHIP
-Source Table: CustomerCustomerDemo
-Target Entity: CustomerType
-Join Column: CustomerTypeId
-Relationship Type: entity_reference
-Retrieval Text: CustomerCustomerDemo can be joined with CustomerType using CustomerTypeId. This relationship enables cross-table business analysis.
 
-================================================================================
+============================================================
+CHUNK_ID: join_customercustomerdemo_customertypeid
+CHUNK_TYPE: join_entity
+TABLE_NAME: CustomerCustomerDemo
+TARGET_ENTITY: CustomerType
+JOIN_COLUMN: CustomerTypeId
+RETRIEVAL_TEXT: CustomerCustomerDemo can be joined with CustomerType using CustomerTypeId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: CustomerCustomerDemo can be joined with CustomerType using CustomerTypeId. This relationship supports cross-table analysis.
+============================================================
 
-JOIN RELATIONSHIP
-Source Table: EmployeeTerritory
-Target Entity: Employee
-Join Column: EmployeeId
-Relationship Type: entity_reference
-Retrieval Text: EmployeeTerritory can be joined with Employee using EmployeeId. This relationship enables cross-table business analysis.
+============================================================
+CHUNK_ID: join_employeeterritory_employeeid
+CHUNK_TYPE: join_entity
+TABLE_NAME: EmployeeTerritory
+TARGET_ENTITY: Employee
+JOIN_COLUMN: EmployeeId
+RETRIEVAL_TEXT: EmployeeTerritory can be joined with Employee using EmployeeId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: EmployeeTerritory can be joined with Employee using EmployeeId. This relationship supports cross-table analysis.
+============================================================
 
-================================================================================
+============================================================
+CHUNK_ID: join_employeeterritory_territoryid
+CHUNK_TYPE: join_entity
+TABLE_NAME: EmployeeTerritory
+TARGET_ENTITY: Territory
+JOIN_COLUMN: TerritoryId
+RETRIEVAL_TEXT: EmployeeTerritory can be joined with Territory using TerritoryId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: EmployeeTerritory can be joined with Territory using TerritoryId. This relationship supports cross-table analysis.
+============================================================
 
-JOIN RELATIONSHIP
-Source Table: EmployeeTerritory
-Target Entity: Territory
-Join Column: TerritoryId
-Relationship Type: entity_reference
-Retrieval Text: EmployeeTerritory can be joined with Territory using TerritoryId. This relationship enables cross-table business analysis.
+============================================================
+CHUNK_ID: join_order_customerid
+CHUNK_TYPE: join_entity
+TABLE_NAME: Order
+TARGET_ENTITY: Customer
+JOIN_COLUMN: CustomerId
+RETRIEVAL_TEXT: Order can be joined with Customer using CustomerId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: Order can be joined with Customer using CustomerId. This relationship supports cross-table analysis.
+============================================================
 
-================================================================================
+============================================================
+CHUNK_ID: join_order_employeeid
+CHUNK_TYPE: join_entity
+TABLE_NAME: Order
+TARGET_ENTITY: Employee
+JOIN_COLUMN: EmployeeId
+RETRIEVAL_TEXT: Order can be joined with Employee using EmployeeId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: Order can be joined with Employee using EmployeeId. This relationship supports cross-table analysis.
+============================================================
 
-JOIN RELATIONSHIP
-Source Table: Order
-Target Entity: Customer
-Join Column: CustomerId
-Relationship Type: entity_reference
-Retrieval Text: Order can be joined with Customer using CustomerId. This relationship enables cross-table business analysis.
+============================================================
+CHUNK_ID: join_orderdetail_orderid
+CHUNK_TYPE: join_entity
+TABLE_NAME: OrderDetail
+TARGET_ENTITY: Order
+JOIN_COLUMN: OrderId
+RETRIEVAL_TEXT: OrderDetail can be joined with Order using OrderId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: OrderDetail can be joined with Order using OrderId. This relationship supports cross-table analysis.
+============================================================
 
-================================================================================
+============================================================
+CHUNK_ID: join_orderdetail_productid
+CHUNK_TYPE: join_entity
+TABLE_NAME: OrderDetail
+TARGET_ENTITY: Product
+JOIN_COLUMN: ProductId
+RETRIEVAL_TEXT: OrderDetail can be joined with Product using ProductId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: OrderDetail can be joined with Product using ProductId. This relationship supports cross-table analysis.
+============================================================
 
-JOIN RELATIONSHIP
-Source Table: Order
-Target Entity: Employee
-Join Column: EmployeeId
-Relationship Type: entity_reference
-Retrieval Text: Order can be joined with Employee using EmployeeId. This relationship enables cross-table business analysis.
+============================================================
+CHUNK_ID: join_product_supplierid
+CHUNK_TYPE: join_entity
+TABLE_NAME: Product
+TARGET_ENTITY: Supplier
+JOIN_COLUMN: SupplierId
+RETRIEVAL_TEXT: Product can be joined with Supplier using SupplierId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: Product can be joined with Supplier using SupplierId. This relationship supports cross-table analysis.
+============================================================
 
-================================================================================
+============================================================
+CHUNK_ID: join_product_categoryid
+CHUNK_TYPE: join_entity
+TABLE_NAME: Product
+TARGET_ENTITY: Category
+JOIN_COLUMN: CategoryId
+RETRIEVAL_TEXT: Product can be joined with Category using CategoryId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: Product can be joined with Category using CategoryId. This relationship supports cross-table analysis.
+============================================================
 
-JOIN RELATIONSHIP
-Source Table: OrderDetail
-Target Entity: Order
-Join Column: OrderId
-Relationship Type: entity_reference
-Retrieval Text: OrderDetail can be joined with Order using OrderId. This relationship enables cross-table business analysis.
-
-================================================================================
-
-JOIN RELATIONSHIP
-Source Table: OrderDetail
-Target Entity: Product
-Join Column: ProductId
-Relationship Type: entity_reference
-Retrieval Text: OrderDetail can be joined with Product using ProductId. This relationship enables cross-table business analysis.
-
-================================================================================
-
-JOIN RELATIONSHIP
-Source Table: Product
-Target Entity: Supplier
-Join Column: SupplierId
-Relationship Type: entity_reference
-Retrieval Text: Product can be joined with Supplier using SupplierId. This relationship enables cross-table business analysis.
-
-================================================================================
-
-JOIN RELATIONSHIP
-Source Table: Product
-Target Entity: Category
-Join Column: CategoryId
-Relationship Type: entity_reference
-Retrieval Text: Product can be joined with Category using CategoryId. This relationship enables cross-table business analysis.
-
-================================================================================
-
-JOIN RELATIONSHIP
-Source Table: Territory
-Target Entity: Region
-Join Column: RegionId
-Relationship Type: entity_reference
-Retrieval Text: Territory can be joined with Region using RegionId. This relationship enables cross-table business analysis.
-
-================================================================================
-
+============================================================
+CHUNK_ID: join_territory_regionid
+CHUNK_TYPE: join_entity
+TABLE_NAME: Territory
+TARGET_ENTITY: Region
+JOIN_COLUMN: RegionId
+RETRIEVAL_TEXT: Territory can be joined with Region using RegionId. This relationship supports cross-table analysis.
+EMBEDDING_TEXT: Territory can be joined with Region using RegionId. This relationship supports cross-table analysis.
+============================================================

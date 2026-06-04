@@ -1,0 +1,117 @@
+
+============================================================
+CHUNK_ID: business_category
+CHUNK_TYPE: business_entity
+TABLE_NAME: Category
+BUSINESS_ENTITY: Category
+RETRIEVAL_TEXT: Category is a business entity. Related attributes include: CategoryName, Description. Table: Category. Description: Category is a reference table used in business operations..
+EMBEDDING_TEXT: Category is a business entity. Related attributes include: CategoryName, Description. Table: Category. Description: Category is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_customer
+CHUNK_TYPE: business_entity
+TABLE_NAME: Customer
+BUSINESS_ENTITY: Customer
+RETRIEVAL_TEXT: Customer is a business entity. Related attributes include: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax. Table: Customer. Description: Customer is a reference table used in business operations..
+EMBEDDING_TEXT: Customer is a business entity. Related attributes include: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax. Table: Customer. Description: Customer is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_customercustomerdemo
+CHUNK_TYPE: business_entity
+TABLE_NAME: CustomerCustomerDemo
+BUSINESS_ENTITY: CustomerCustomerDemo
+RETRIEVAL_TEXT: CustomerCustomerDemo is a business entity. Related attributes include: . Table: CustomerCustomerDemo. Description: CustomerCustomerDemo is a reference table used in business operations..
+EMBEDDING_TEXT: CustomerCustomerDemo is a business entity. Related attributes include: . Table: CustomerCustomerDemo. Description: CustomerCustomerDemo is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_customerdemographic
+CHUNK_TYPE: business_entity
+TABLE_NAME: CustomerDemographic
+BUSINESS_ENTITY: CustomerDemographic
+RETRIEVAL_TEXT: CustomerDemographic is a business entity. Related attributes include: CustomerDesc. Table: CustomerDemographic. Description: CustomerDemographic is a reference table used in business operations..
+EMBEDDING_TEXT: CustomerDemographic is a business entity. Related attributes include: CustomerDesc. Table: CustomerDemographic. Description: CustomerDemographic is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_employee
+CHUNK_TYPE: business_entity
+TABLE_NAME: Employee
+BUSINESS_ENTITY: Employee
+RETRIEVAL_TEXT: Employee is a business entity. Related attributes include: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath. Table: Employee. Description: Employee is a reference table used in business operations..
+EMBEDDING_TEXT: Employee is a business entity. Related attributes include: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath. Table: Employee. Description: Employee is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_employeeterritory
+CHUNK_TYPE: business_entity
+TABLE_NAME: EmployeeTerritory
+BUSINESS_ENTITY: EmployeeTerritory
+RETRIEVAL_TEXT: EmployeeTerritory is a business entity. Related attributes include: . Table: EmployeeTerritory. Description: EmployeeTerritory is a reference table used in business operations..
+EMBEDDING_TEXT: EmployeeTerritory is a business entity. Related attributes include: . Table: EmployeeTerritory. Description: EmployeeTerritory is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_order
+CHUNK_TYPE: business_entity
+TABLE_NAME: Order
+BUSINESS_ENTITY: Order
+RETRIEVAL_TEXT: Order is a business entity. Related attributes include: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry. Table: Order. Description: Order is a master table used in business operations..
+EMBEDDING_TEXT: Order is a business entity. Related attributes include: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry. Table: Order. Description: Order is a master table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_orderdetail
+CHUNK_TYPE: business_entity
+TABLE_NAME: OrderDetail
+BUSINESS_ENTITY: OrderDetail
+RETRIEVAL_TEXT: OrderDetail is a business entity. Related attributes include: . Table: OrderDetail. Description: OrderDetail is a master table used in business operations..
+EMBEDDING_TEXT: OrderDetail is a business entity. Related attributes include: . Table: OrderDetail. Description: OrderDetail is a master table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_product
+CHUNK_TYPE: business_entity
+TABLE_NAME: Product
+BUSINESS_ENTITY: Product
+RETRIEVAL_TEXT: Product is a business entity. Related attributes include: ProductName, QuantityPerUnit. Table: Product. Description: Product is a reference table used in business operations..
+EMBEDDING_TEXT: Product is a business entity. Related attributes include: ProductName, QuantityPerUnit. Table: Product. Description: Product is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_region
+CHUNK_TYPE: business_entity
+TABLE_NAME: Region
+BUSINESS_ENTITY: Region
+RETRIEVAL_TEXT: Region is a business entity. Related attributes include: RegionDescription. Table: Region. Description: Region is a reference table used in business operations..
+EMBEDDING_TEXT: Region is a business entity. Related attributes include: RegionDescription. Table: Region. Description: Region is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_shipper
+CHUNK_TYPE: business_entity
+TABLE_NAME: Shipper
+BUSINESS_ENTITY: Shipper
+RETRIEVAL_TEXT: Shipper is a business entity. Related attributes include: CompanyName, Phone. Table: Shipper. Description: Shipper is a reference table used in business operations..
+EMBEDDING_TEXT: Shipper is a business entity. Related attributes include: CompanyName, Phone. Table: Shipper. Description: Shipper is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_supplier
+CHUNK_TYPE: business_entity
+TABLE_NAME: Supplier
+BUSINESS_ENTITY: Supplier
+RETRIEVAL_TEXT: Supplier is a business entity. Related attributes include: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage. Table: Supplier. Description: Supplier is a reference table used in business operations..
+EMBEDDING_TEXT: Supplier is a business entity. Related attributes include: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage. Table: Supplier. Description: Supplier is a reference table used in business operations..
+============================================================
+
+============================================================
+CHUNK_ID: business_territory
+CHUNK_TYPE: business_entity
+TABLE_NAME: Territory
+BUSINESS_ENTITY: Territory
+RETRIEVAL_TEXT: Territory is a business entity. Related attributes include: TerritoryDescription. Table: Territory. Description: Territory is a reference table used in business operations..
+EMBEDDING_TEXT: Territory is a business entity. Related attributes include: TerritoryDescription. Table: Territory. Description: Territory is a reference table used in business operations..
+============================================================

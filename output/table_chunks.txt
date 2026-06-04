@@ -1,39 +1,195 @@
 
 ============================================================
+CHUNK_ID: table_category
+CHUNK_TYPE: table_entity
+TABLE_NAME: Category
+TABLE_DESCRIPTION: Category is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Category
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: category, categoryname, description, id
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category. Tags: category, categoryname, description, id
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category. Tags: category, categoryname, description, id
+============================================================
+
+============================================================
+CHUNK_ID: table_customer
 CHUNK_TYPE: table_entity
 TABLE_NAME: Customer
-TABLE_DESCRIPTION: Customer Master contains all customer information used in business operations.
-TABLE_TYPE: master
+TABLE_DESCRIPTION: Customer is a reference table used in business operations.
+TABLE_TYPE: reference
 BUSINESS_ENTITY: Customer
 PRIMARY_KEY: Id
 FOREIGN_KEYS: none
 RELATED_TABLES: none
 SEMANTIC_TAGS: address, companyname, contactname, contacttitle, customer, id
-RETRIEVAL_TEXT: customer customer master contains all customer information used in business operations. customer address companyname contactname contacttitle customer id
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer. Tags: address, companyname, contactname, contacttitle, customer, id
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer. Tags: address, companyname, contactname, contacttitle, customer, id
 ============================================================
 
 ============================================================
+CHUNK_ID: table_customercustomerdemo
+CHUNK_TYPE: table_entity
+TABLE_NAME: CustomerCustomerDemo
+TABLE_DESCRIPTION: CustomerCustomerDemo is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: CustomerCustomerDemo
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: customercustomerdemo, customertypeid, id
+RETRIEVAL_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo. Tags: customercustomerdemo, customertypeid, id
+EMBEDDING_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo. Tags: customercustomerdemo, customertypeid, id
+============================================================
+
+============================================================
+CHUNK_ID: table_customerdemographic
+CHUNK_TYPE: table_entity
+TABLE_NAME: CustomerDemographic
+TABLE_DESCRIPTION: CustomerDemographic is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: CustomerDemographic
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: customerdemographic, customerdesc, id
+RETRIEVAL_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic. Tags: customerdemographic, customerdesc, id
+EMBEDDING_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic. Tags: customerdemographic, customerdesc, id
+============================================================
+
+============================================================
+CHUNK_ID: table_employee
+CHUNK_TYPE: table_entity
+TABLE_NAME: Employee
+TABLE_DESCRIPTION: Employee is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Employee
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: employee, firstname, id, lastname, title, titleofcourtesy
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee. Tags: employee, firstname, id, lastname, title, titleofcourtesy
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee. Tags: employee, firstname, id, lastname, title, titleofcourtesy
+============================================================
+
+============================================================
+CHUNK_ID: table_employeeterritory
+CHUNK_TYPE: table_entity
+TABLE_NAME: EmployeeTerritory
+TABLE_DESCRIPTION: EmployeeTerritory is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: EmployeeTerritory
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: employeeid, employeeterritory, id, territoryid
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory. Tags: employeeid, employeeterritory, id, territoryid
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory. Tags: employeeid, employeeterritory, id, territoryid
+============================================================
+
+============================================================
+CHUNK_ID: table_order
 CHUNK_TYPE: table_entity
 TABLE_NAME: Order
-TABLE_DESCRIPTION: Order Master contains all order information used in business operations.
-TABLE_TYPE: transaction
+TABLE_DESCRIPTION: Order is a master table used in business operations.
+TABLE_TYPE: master
 BUSINESS_ENTITY: Order
 PRIMARY_KEY: Id
 FOREIGN_KEYS: none
 RELATED_TABLES: none
 SEMANTIC_TAGS: customerid, employeeid, id, order, orderdate, requireddate
-RETRIEVAL_TEXT: order order master contains all order information used in business operations. order customerid employeeid id order orderdate requireddate
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order. Tags: customerid, employeeid, id, order, orderdate, requireddate
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order. Tags: customerid, employeeid, id, order, orderdate, requireddate
 ============================================================
 
 ============================================================
+CHUNK_ID: table_orderdetail
+CHUNK_TYPE: table_entity
+TABLE_NAME: OrderDetail
+TABLE_DESCRIPTION: OrderDetail is a master table used in business operations.
+TABLE_TYPE: master
+BUSINESS_ENTITY: OrderDetail
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: id, orderdetail, orderid, productid, quantity, unitprice
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail. Tags: id, orderdetail, orderid, productid, quantity, unitprice
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail. Tags: id, orderdetail, orderid, productid, quantity, unitprice
+============================================================
+
+============================================================
+CHUNK_ID: table_product
 CHUNK_TYPE: table_entity
 TABLE_NAME: Product
-TABLE_DESCRIPTION: Product Master contains all product information used in business operations.
-TABLE_TYPE: master
+TABLE_DESCRIPTION: Product is a reference table used in business operations.
+TABLE_TYPE: reference
 BUSINESS_ENTITY: Product
 PRIMARY_KEY: Id
 FOREIGN_KEYS: none
 RELATED_TABLES: none
 SEMANTIC_TAGS: categoryid, id, product, productname, quantityperunit, supplierid
-RETRIEVAL_TEXT: product product master contains all product information used in business operations. product categoryid id product productname quantityperunit supplierid
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product. Tags: categoryid, id, product, productname, quantityperunit, supplierid
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product. Tags: categoryid, id, product, productname, quantityperunit, supplierid
+============================================================
+
+============================================================
+CHUNK_ID: table_region
+CHUNK_TYPE: table_entity
+TABLE_NAME: Region
+TABLE_DESCRIPTION: Region is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Region
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: id, region, regiondescription
+RETRIEVAL_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region. Tags: id, region, regiondescription
+EMBEDDING_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region. Tags: id, region, regiondescription
+============================================================
+
+============================================================
+CHUNK_ID: table_shipper
+CHUNK_TYPE: table_entity
+TABLE_NAME: Shipper
+TABLE_DESCRIPTION: Shipper is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Shipper
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: companyname, id, phone, shipper
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper. Tags: companyname, id, phone, shipper
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper. Tags: companyname, id, phone, shipper
+============================================================
+
+============================================================
+CHUNK_ID: table_supplier
+CHUNK_TYPE: table_entity
+TABLE_NAME: Supplier
+TABLE_DESCRIPTION: Supplier is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Supplier
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: address, companyname, contactname, contacttitle, id, supplier
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier. Tags: address, companyname, contactname, contacttitle, id, supplier
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier. Tags: address, companyname, contactname, contacttitle, id, supplier
+============================================================
+
+============================================================
+CHUNK_ID: table_territory
+CHUNK_TYPE: table_entity
+TABLE_NAME: Territory
+TABLE_DESCRIPTION: Territory is a reference table used in business operations.
+TABLE_TYPE: reference
+BUSINESS_ENTITY: Territory
+PRIMARY_KEY: Id
+FOREIGN_KEYS: none
+RELATED_TABLES: none
+SEMANTIC_TAGS: id, regionid, territory, territorydescription
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory. Tags: id, regionid, territory, territorydescription
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory. Tags: id, regionid, territory, territorydescription
 ============================================================

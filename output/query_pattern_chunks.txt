@@ -1,408 +1,510 @@
-QUERY PATTERN
-Table: Category
-Pattern Type: group_by
-Columns: CategoryName, Description
-Retrieval Text: Category supports group_by analysis using columns CategoryName, Description.
-
-================================================================================
-
-QUERY PATTERN
-Table: Category
-Pattern Type: filtering
-Columns: CategoryName, Description
-Retrieval Text: Category supports filtering analysis using columns CategoryName, Description.
-
-================================================================================
-
-QUERY PATTERN
-Table: Category
-Pattern Type: sorting
-Columns: Id
-Retrieval Text: Category supports sorting analysis using columns Id.
-
-================================================================================
-
-QUERY PATTERN
-Table: Category
-Pattern Type: search
-Columns: CategoryName, Description
-Retrieval Text: Category supports search analysis using columns CategoryName, Description.
-
-================================================================================
-
-QUERY PATTERN
-Table: Customer
-Pattern Type: group_by
-Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
-Retrieval Text: Customer supports group_by analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
-
-================================================================================
-
-QUERY PATTERN
-Table: Customer
-Pattern Type: filtering
-Columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
-Retrieval Text: Customer supports filtering analysis using columns Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
-
-================================================================================
-
-QUERY PATTERN
-Table: Customer
-Pattern Type: search
-Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
-Retrieval Text: Customer supports search analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax.
-
-================================================================================
-
-QUERY PATTERN
-Table: CustomerCustomerDemo
-Pattern Type: group_by
-Columns: CustomerTypeId
-Retrieval Text: CustomerCustomerDemo supports group_by analysis using columns CustomerTypeId.
-
-================================================================================
-
-QUERY PATTERN
-Table: CustomerCustomerDemo
-Pattern Type: filtering
-Columns: Id, CustomerTypeId
-Retrieval Text: CustomerCustomerDemo supports filtering analysis using columns Id, CustomerTypeId.
-
-================================================================================
-
-QUERY PATTERN
-Table: CustomerDemographic
-Pattern Type: group_by
-Columns: CustomerDesc
-Retrieval Text: CustomerDemographic supports group_by analysis using columns CustomerDesc.
-
-================================================================================
-
-QUERY PATTERN
-Table: CustomerDemographic
-Pattern Type: filtering
-Columns: Id, CustomerDesc
-Retrieval Text: CustomerDemographic supports filtering analysis using columns Id, CustomerDesc.
-
-================================================================================
-
-QUERY PATTERN
-Table: CustomerDemographic
-Pattern Type: search
-Columns: CustomerDesc
-Retrieval Text: CustomerDemographic supports search analysis using columns CustomerDesc.
-
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: time_series
-Columns: BirthDate, HireDate
-Retrieval Text: Employee supports time_series analysis using columns BirthDate, HireDate.
 
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: aggregation
-Columns: ReportsTo
-Retrieval Text: Employee supports aggregation analysis using columns ReportsTo.
-
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: group_by
-Columns: LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
-Retrieval Text: Employee supports group_by analysis using columns LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
-
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: filtering
-Columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
-Retrieval Text: Employee supports filtering analysis using columns LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
-
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: sorting
-Columns: Id, ReportsTo
-Retrieval Text: Employee supports sorting analysis using columns Id, ReportsTo.
-
-================================================================================
-
-QUERY PATTERN
-Table: Employee
-Pattern Type: search
-Columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
-Retrieval Text: Employee supports search analysis using columns LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath.
-
-================================================================================
-
-QUERY PATTERN
-Table: EmployeeTerritory
-Pattern Type: group_by
-Columns: TerritoryId
-Retrieval Text: EmployeeTerritory supports group_by analysis using columns TerritoryId.
-
-================================================================================
-
-QUERY PATTERN
-Table: EmployeeTerritory
-Pattern Type: filtering
-Columns: Id, TerritoryId
-Retrieval Text: EmployeeTerritory supports filtering analysis using columns Id, TerritoryId.
-
-================================================================================
-
-QUERY PATTERN
-Table: EmployeeTerritory
-Pattern Type: sorting
-Columns: EmployeeId
-Retrieval Text: EmployeeTerritory supports sorting analysis using columns EmployeeId.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: time_series
-Columns: OrderDate, RequiredDate, ShippedDate
-Retrieval Text: Order supports time_series analysis using columns OrderDate, RequiredDate, ShippedDate.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: aggregation
-Columns: ShipVia, Freight
-Retrieval Text: Order supports aggregation analysis using columns ShipVia, Freight.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: group_by
-Columns: CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
-Retrieval Text: Order supports group_by analysis using columns CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: filtering
-Columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
-Retrieval Text: Order supports filtering analysis using columns CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: sorting
-Columns: Id, EmployeeId, ShipVia, Freight
-Retrieval Text: Order supports sorting analysis using columns Id, EmployeeId, ShipVia, Freight.
-
-================================================================================
-
-QUERY PATTERN
-Table: Order
-Pattern Type: search
-Columns: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
-Retrieval Text: Order supports search analysis using columns OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry.
-
-================================================================================
-
-QUERY PATTERN
-Table: OrderDetail
-Pattern Type: aggregation
-Columns: UnitPrice, Quantity, Discount
-Retrieval Text: OrderDetail supports aggregation analysis using columns UnitPrice, Quantity, Discount.
-
-================================================================================
-
-QUERY PATTERN
-Table: OrderDetail
-Pattern Type: filtering
-Columns: Id
-Retrieval Text: OrderDetail supports filtering analysis using columns Id.
-
-================================================================================
-
-QUERY PATTERN
-Table: OrderDetail
-Pattern Type: sorting
-Columns: OrderId, ProductId, UnitPrice, Quantity, Discount
-Retrieval Text: OrderDetail supports sorting analysis using columns OrderId, ProductId, UnitPrice, Quantity, Discount.
-
-================================================================================
-
-QUERY PATTERN
-Table: Product
-Pattern Type: aggregation
-Columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
-Retrieval Text: Product supports aggregation analysis using columns UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued.
-
-================================================================================
-
-QUERY PATTERN
-Table: Product
-Pattern Type: group_by
-Columns: ProductName, QuantityPerUnit
-Retrieval Text: Product supports group_by analysis using columns ProductName, QuantityPerUnit.
-
-================================================================================
-
-QUERY PATTERN
-Table: Product
-Pattern Type: filtering
-Columns: ProductName, QuantityPerUnit
-Retrieval Text: Product supports filtering analysis using columns ProductName, QuantityPerUnit.
-
-================================================================================
-
-QUERY PATTERN
-Table: Product
-Pattern Type: sorting
-Columns: Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
-Retrieval Text: Product supports sorting analysis using columns Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued.
-
-================================================================================
-
-QUERY PATTERN
-Table: Product
-Pattern Type: search
-Columns: ProductName, QuantityPerUnit
-Retrieval Text: Product supports search analysis using columns ProductName, QuantityPerUnit.
-
-================================================================================
-
-QUERY PATTERN
-Table: Region
-Pattern Type: group_by
-Columns: RegionDescription
-Retrieval Text: Region supports group_by analysis using columns RegionDescription.
-
-================================================================================
-
-QUERY PATTERN
-Table: Region
-Pattern Type: filtering
-Columns: RegionDescription
-Retrieval Text: Region supports filtering analysis using columns RegionDescription.
-
-================================================================================
-
-QUERY PATTERN
-Table: Region
-Pattern Type: sorting
-Columns: Id
-Retrieval Text: Region supports sorting analysis using columns Id.
-
-================================================================================
-
-QUERY PATTERN
-Table: Region
-Pattern Type: search
-Columns: RegionDescription
-Retrieval Text: Region supports search analysis using columns RegionDescription.
-
-================================================================================
-
-QUERY PATTERN
-Table: Shipper
-Pattern Type: group_by
-Columns: CompanyName, Phone
-Retrieval Text: Shipper supports group_by analysis using columns CompanyName, Phone.
-
-================================================================================
-
-QUERY PATTERN
-Table: Shipper
-Pattern Type: filtering
-Columns: CompanyName, Phone
-Retrieval Text: Shipper supports filtering analysis using columns CompanyName, Phone.
-
-================================================================================
-
-QUERY PATTERN
-Table: Shipper
-Pattern Type: sorting
-Columns: Id
-Retrieval Text: Shipper supports sorting analysis using columns Id.
-
-================================================================================
-
-QUERY PATTERN
-Table: Shipper
-Pattern Type: search
-Columns: CompanyName, Phone
-Retrieval Text: Shipper supports search analysis using columns CompanyName, Phone.
-
-================================================================================
-
-QUERY PATTERN
-Table: Supplier
-Pattern Type: group_by
-Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
-Retrieval Text: Supplier supports group_by analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
-
-================================================================================
-
-QUERY PATTERN
-Table: Supplier
-Pattern Type: filtering
-Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
-Retrieval Text: Supplier supports filtering analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
-
-================================================================================
-
-QUERY PATTERN
-Table: Supplier
-Pattern Type: sorting
-Columns: Id
-Retrieval Text: Supplier supports sorting analysis using columns Id.
-
-================================================================================
-
-QUERY PATTERN
-Table: Supplier
-Pattern Type: search
-Columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
-Retrieval Text: Supplier supports search analysis using columns CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage.
-
-================================================================================
-
-QUERY PATTERN
-Table: Territory
-Pattern Type: group_by
-Columns: TerritoryDescription
-Retrieval Text: Territory supports group_by analysis using columns TerritoryDescription.
-
-================================================================================
-
-QUERY PATTERN
-Table: Territory
-Pattern Type: filtering
-Columns: Id, TerritoryDescription
-Retrieval Text: Territory supports filtering analysis using columns Id, TerritoryDescription.
-
-================================================================================
-
-QUERY PATTERN
-Table: Territory
-Pattern Type: sorting
-Columns: RegionId
-Retrieval Text: Territory supports sorting analysis using columns RegionId.
-
-================================================================================
-
-QUERY PATTERN
-Table: Territory
-Pattern Type: search
-Columns: TerritoryDescription
-Retrieval Text: Territory supports search analysis using columns TerritoryDescription.
-
-================================================================================
-
+============================================================
+CHUNK_ID: pattern_category_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Category
+PATTERN_TYPE: group_by
+COLUMNS: CategoryName, Description
+RETRIEVAL_TEXT: Category supports group_by analysis. Relevant columns: CategoryName, Description
+EMBEDDING_TEXT: Category supports group_by analysis. Relevant columns: CategoryName, Description
+============================================================
+
+============================================================
+CHUNK_ID: pattern_category_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Category
+PATTERN_TYPE: filtering
+COLUMNS: CategoryName, Description
+RETRIEVAL_TEXT: Category supports filtering analysis. Relevant columns: CategoryName, Description
+EMBEDDING_TEXT: Category supports filtering analysis. Relevant columns: CategoryName, Description
+============================================================
+
+============================================================
+CHUNK_ID: pattern_category_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Category
+PATTERN_TYPE: sorting
+COLUMNS: Id
+RETRIEVAL_TEXT: Category supports sorting analysis. Relevant columns: Id
+EMBEDDING_TEXT: Category supports sorting analysis. Relevant columns: Id
+============================================================
+
+============================================================
+CHUNK_ID: pattern_category_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Category
+PATTERN_TYPE: search
+COLUMNS: CategoryName, Description
+RETRIEVAL_TEXT: Category supports search analysis. Relevant columns: CategoryName, Description
+EMBEDDING_TEXT: Category supports search analysis. Relevant columns: CategoryName, Description
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customer_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Customer
+PATTERN_TYPE: group_by
+COLUMNS: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+RETRIEVAL_TEXT: Customer supports group_by analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+EMBEDDING_TEXT: Customer supports group_by analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customer_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Customer
+PATTERN_TYPE: filtering
+COLUMNS: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+RETRIEVAL_TEXT: Customer supports filtering analysis. Relevant columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+EMBEDDING_TEXT: Customer supports filtering analysis. Relevant columns: Id, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customer_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Customer
+PATTERN_TYPE: search
+COLUMNS: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+RETRIEVAL_TEXT: Customer supports search analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+EMBEDDING_TEXT: Customer supports search analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customercustomerdemo_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: CustomerCustomerDemo
+PATTERN_TYPE: group_by
+COLUMNS: CustomerTypeId
+RETRIEVAL_TEXT: CustomerCustomerDemo supports group_by analysis. Relevant columns: CustomerTypeId
+EMBEDDING_TEXT: CustomerCustomerDemo supports group_by analysis. Relevant columns: CustomerTypeId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customercustomerdemo_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: CustomerCustomerDemo
+PATTERN_TYPE: filtering
+COLUMNS: Id, CustomerTypeId
+RETRIEVAL_TEXT: CustomerCustomerDemo supports filtering analysis. Relevant columns: Id, CustomerTypeId
+EMBEDDING_TEXT: CustomerCustomerDemo supports filtering analysis. Relevant columns: Id, CustomerTypeId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customerdemographic_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: CustomerDemographic
+PATTERN_TYPE: group_by
+COLUMNS: CustomerDesc
+RETRIEVAL_TEXT: CustomerDemographic supports group_by analysis. Relevant columns: CustomerDesc
+EMBEDDING_TEXT: CustomerDemographic supports group_by analysis. Relevant columns: CustomerDesc
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customerdemographic_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: CustomerDemographic
+PATTERN_TYPE: filtering
+COLUMNS: Id, CustomerDesc
+RETRIEVAL_TEXT: CustomerDemographic supports filtering analysis. Relevant columns: Id, CustomerDesc
+EMBEDDING_TEXT: CustomerDemographic supports filtering analysis. Relevant columns: Id, CustomerDesc
+============================================================
+
+============================================================
+CHUNK_ID: pattern_customerdemographic_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: CustomerDemographic
+PATTERN_TYPE: search
+COLUMNS: CustomerDesc
+RETRIEVAL_TEXT: CustomerDemographic supports search analysis. Relevant columns: CustomerDesc
+EMBEDDING_TEXT: CustomerDemographic supports search analysis. Relevant columns: CustomerDesc
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_aggregation
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: aggregation
+COLUMNS: ReportsTo
+RETRIEVAL_TEXT: Employee supports aggregation analysis. Relevant columns: ReportsTo
+EMBEDDING_TEXT: Employee supports aggregation analysis. Relevant columns: ReportsTo
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: group_by
+COLUMNS: LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+RETRIEVAL_TEXT: Employee supports group_by analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+EMBEDDING_TEXT: Employee supports group_by analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: filtering
+COLUMNS: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+RETRIEVAL_TEXT: Employee supports filtering analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+EMBEDDING_TEXT: Employee supports filtering analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: sorting
+COLUMNS: Id, ReportsTo
+RETRIEVAL_TEXT: Employee supports sorting analysis. Relevant columns: Id, ReportsTo
+EMBEDDING_TEXT: Employee supports sorting analysis. Relevant columns: Id, ReportsTo
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: search
+COLUMNS: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+RETRIEVAL_TEXT: Employee supports search analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+EMBEDDING_TEXT: Employee supports search analysis. Relevant columns: LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes, PhotoPath
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employee_time_series
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Employee
+PATTERN_TYPE: time_series
+COLUMNS: BirthDate, HireDate
+RETRIEVAL_TEXT: Employee supports time_series analysis. Relevant columns: BirthDate, HireDate
+EMBEDDING_TEXT: Employee supports time_series analysis. Relevant columns: BirthDate, HireDate
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employeeterritory_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: EmployeeTerritory
+PATTERN_TYPE: group_by
+COLUMNS: TerritoryId
+RETRIEVAL_TEXT: EmployeeTerritory supports group_by analysis. Relevant columns: TerritoryId
+EMBEDDING_TEXT: EmployeeTerritory supports group_by analysis. Relevant columns: TerritoryId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employeeterritory_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: EmployeeTerritory
+PATTERN_TYPE: filtering
+COLUMNS: Id, TerritoryId
+RETRIEVAL_TEXT: EmployeeTerritory supports filtering analysis. Relevant columns: Id, TerritoryId
+EMBEDDING_TEXT: EmployeeTerritory supports filtering analysis. Relevant columns: Id, TerritoryId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_employeeterritory_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: EmployeeTerritory
+PATTERN_TYPE: sorting
+COLUMNS: EmployeeId
+RETRIEVAL_TEXT: EmployeeTerritory supports sorting analysis. Relevant columns: EmployeeId
+EMBEDDING_TEXT: EmployeeTerritory supports sorting analysis. Relevant columns: EmployeeId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_aggregation
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: aggregation
+COLUMNS: ShipVia, Freight
+RETRIEVAL_TEXT: Order supports aggregation analysis. Relevant columns: ShipVia, Freight
+EMBEDDING_TEXT: Order supports aggregation analysis. Relevant columns: ShipVia, Freight
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: group_by
+COLUMNS: CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+RETRIEVAL_TEXT: Order supports group_by analysis. Relevant columns: CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+EMBEDDING_TEXT: Order supports group_by analysis. Relevant columns: CustomerId, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: filtering
+COLUMNS: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+RETRIEVAL_TEXT: Order supports filtering analysis. Relevant columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+EMBEDDING_TEXT: Order supports filtering analysis. Relevant columns: CustomerId, OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: sorting
+COLUMNS: Id, EmployeeId, ShipVia, Freight
+RETRIEVAL_TEXT: Order supports sorting analysis. Relevant columns: Id, EmployeeId, ShipVia, Freight
+EMBEDDING_TEXT: Order supports sorting analysis. Relevant columns: Id, EmployeeId, ShipVia, Freight
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: search
+COLUMNS: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+RETRIEVAL_TEXT: Order supports search analysis. Relevant columns: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+EMBEDDING_TEXT: Order supports search analysis. Relevant columns: OrderDate, RequiredDate, ShippedDate, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
+============================================================
+
+============================================================
+CHUNK_ID: pattern_order_time_series
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Order
+PATTERN_TYPE: time_series
+COLUMNS: OrderDate, RequiredDate, ShippedDate
+RETRIEVAL_TEXT: Order supports time_series analysis. Relevant columns: OrderDate, RequiredDate, ShippedDate
+EMBEDDING_TEXT: Order supports time_series analysis. Relevant columns: OrderDate, RequiredDate, ShippedDate
+============================================================
+
+============================================================
+CHUNK_ID: pattern_orderdetail_aggregation
+CHUNK_TYPE: query_pattern
+TABLE_NAME: OrderDetail
+PATTERN_TYPE: aggregation
+COLUMNS: UnitPrice, Quantity, Discount
+RETRIEVAL_TEXT: OrderDetail supports aggregation analysis. Relevant columns: UnitPrice, Quantity, Discount
+EMBEDDING_TEXT: OrderDetail supports aggregation analysis. Relevant columns: UnitPrice, Quantity, Discount
+============================================================
+
+============================================================
+CHUNK_ID: pattern_orderdetail_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: OrderDetail
+PATTERN_TYPE: filtering
+COLUMNS: Id
+RETRIEVAL_TEXT: OrderDetail supports filtering analysis. Relevant columns: Id
+EMBEDDING_TEXT: OrderDetail supports filtering analysis. Relevant columns: Id
+============================================================
+
+============================================================
+CHUNK_ID: pattern_orderdetail_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: OrderDetail
+PATTERN_TYPE: sorting
+COLUMNS: OrderId, ProductId, UnitPrice, Quantity, Discount
+RETRIEVAL_TEXT: OrderDetail supports sorting analysis. Relevant columns: OrderId, ProductId, UnitPrice, Quantity, Discount
+EMBEDDING_TEXT: OrderDetail supports sorting analysis. Relevant columns: OrderId, ProductId, UnitPrice, Quantity, Discount
+============================================================
+
+============================================================
+CHUNK_ID: pattern_product_aggregation
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Product
+PATTERN_TYPE: aggregation
+COLUMNS: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+RETRIEVAL_TEXT: Product supports aggregation analysis. Relevant columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+EMBEDDING_TEXT: Product supports aggregation analysis. Relevant columns: UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+============================================================
+
+============================================================
+CHUNK_ID: pattern_product_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Product
+PATTERN_TYPE: group_by
+COLUMNS: ProductName, QuantityPerUnit
+RETRIEVAL_TEXT: Product supports group_by analysis. Relevant columns: ProductName, QuantityPerUnit
+EMBEDDING_TEXT: Product supports group_by analysis. Relevant columns: ProductName, QuantityPerUnit
+============================================================
+
+============================================================
+CHUNK_ID: pattern_product_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Product
+PATTERN_TYPE: filtering
+COLUMNS: ProductName, QuantityPerUnit
+RETRIEVAL_TEXT: Product supports filtering analysis. Relevant columns: ProductName, QuantityPerUnit
+EMBEDDING_TEXT: Product supports filtering analysis. Relevant columns: ProductName, QuantityPerUnit
+============================================================
+
+============================================================
+CHUNK_ID: pattern_product_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Product
+PATTERN_TYPE: sorting
+COLUMNS: Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+RETRIEVAL_TEXT: Product supports sorting analysis. Relevant columns: Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+EMBEDDING_TEXT: Product supports sorting analysis. Relevant columns: Id, SupplierId, CategoryId, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued
+============================================================
+
+============================================================
+CHUNK_ID: pattern_product_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Product
+PATTERN_TYPE: search
+COLUMNS: ProductName, QuantityPerUnit
+RETRIEVAL_TEXT: Product supports search analysis. Relevant columns: ProductName, QuantityPerUnit
+EMBEDDING_TEXT: Product supports search analysis. Relevant columns: ProductName, QuantityPerUnit
+============================================================
+
+============================================================
+CHUNK_ID: pattern_region_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Region
+PATTERN_TYPE: group_by
+COLUMNS: RegionDescription
+RETRIEVAL_TEXT: Region supports group_by analysis. Relevant columns: RegionDescription
+EMBEDDING_TEXT: Region supports group_by analysis. Relevant columns: RegionDescription
+============================================================
+
+============================================================
+CHUNK_ID: pattern_region_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Region
+PATTERN_TYPE: filtering
+COLUMNS: RegionDescription
+RETRIEVAL_TEXT: Region supports filtering analysis. Relevant columns: RegionDescription
+EMBEDDING_TEXT: Region supports filtering analysis. Relevant columns: RegionDescription
+============================================================
+
+============================================================
+CHUNK_ID: pattern_region_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Region
+PATTERN_TYPE: sorting
+COLUMNS: Id
+RETRIEVAL_TEXT: Region supports sorting analysis. Relevant columns: Id
+EMBEDDING_TEXT: Region supports sorting analysis. Relevant columns: Id
+============================================================
+
+============================================================
+CHUNK_ID: pattern_region_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Region
+PATTERN_TYPE: search
+COLUMNS: RegionDescription
+RETRIEVAL_TEXT: Region supports search analysis. Relevant columns: RegionDescription
+EMBEDDING_TEXT: Region supports search analysis. Relevant columns: RegionDescription
+============================================================
+
+============================================================
+CHUNK_ID: pattern_shipper_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Shipper
+PATTERN_TYPE: group_by
+COLUMNS: CompanyName, Phone
+RETRIEVAL_TEXT: Shipper supports group_by analysis. Relevant columns: CompanyName, Phone
+EMBEDDING_TEXT: Shipper supports group_by analysis. Relevant columns: CompanyName, Phone
+============================================================
+
+============================================================
+CHUNK_ID: pattern_shipper_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Shipper
+PATTERN_TYPE: filtering
+COLUMNS: CompanyName, Phone
+RETRIEVAL_TEXT: Shipper supports filtering analysis. Relevant columns: CompanyName, Phone
+EMBEDDING_TEXT: Shipper supports filtering analysis. Relevant columns: CompanyName, Phone
+============================================================
+
+============================================================
+CHUNK_ID: pattern_shipper_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Shipper
+PATTERN_TYPE: sorting
+COLUMNS: Id
+RETRIEVAL_TEXT: Shipper supports sorting analysis. Relevant columns: Id
+EMBEDDING_TEXT: Shipper supports sorting analysis. Relevant columns: Id
+============================================================
+
+============================================================
+CHUNK_ID: pattern_shipper_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Shipper
+PATTERN_TYPE: search
+COLUMNS: CompanyName, Phone
+RETRIEVAL_TEXT: Shipper supports search analysis. Relevant columns: CompanyName, Phone
+EMBEDDING_TEXT: Shipper supports search analysis. Relevant columns: CompanyName, Phone
+============================================================
+
+============================================================
+CHUNK_ID: pattern_supplier_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Supplier
+PATTERN_TYPE: group_by
+COLUMNS: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+RETRIEVAL_TEXT: Supplier supports group_by analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+EMBEDDING_TEXT: Supplier supports group_by analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+============================================================
+
+============================================================
+CHUNK_ID: pattern_supplier_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Supplier
+PATTERN_TYPE: filtering
+COLUMNS: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+RETRIEVAL_TEXT: Supplier supports filtering analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+EMBEDDING_TEXT: Supplier supports filtering analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+============================================================
+
+============================================================
+CHUNK_ID: pattern_supplier_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Supplier
+PATTERN_TYPE: sorting
+COLUMNS: Id
+RETRIEVAL_TEXT: Supplier supports sorting analysis. Relevant columns: Id
+EMBEDDING_TEXT: Supplier supports sorting analysis. Relevant columns: Id
+============================================================
+
+============================================================
+CHUNK_ID: pattern_supplier_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Supplier
+PATTERN_TYPE: search
+COLUMNS: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+RETRIEVAL_TEXT: Supplier supports search analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+EMBEDDING_TEXT: Supplier supports search analysis. Relevant columns: CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage
+============================================================
+
+============================================================
+CHUNK_ID: pattern_territory_group_by
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Territory
+PATTERN_TYPE: group_by
+COLUMNS: TerritoryDescription
+RETRIEVAL_TEXT: Territory supports group_by analysis. Relevant columns: TerritoryDescription
+EMBEDDING_TEXT: Territory supports group_by analysis. Relevant columns: TerritoryDescription
+============================================================
+
+============================================================
+CHUNK_ID: pattern_territory_filtering
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Territory
+PATTERN_TYPE: filtering
+COLUMNS: Id, TerritoryDescription
+RETRIEVAL_TEXT: Territory supports filtering analysis. Relevant columns: Id, TerritoryDescription
+EMBEDDING_TEXT: Territory supports filtering analysis. Relevant columns: Id, TerritoryDescription
+============================================================
+
+============================================================
+CHUNK_ID: pattern_territory_sorting
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Territory
+PATTERN_TYPE: sorting
+COLUMNS: RegionId
+RETRIEVAL_TEXT: Territory supports sorting analysis. Relevant columns: RegionId
+EMBEDDING_TEXT: Territory supports sorting analysis. Relevant columns: RegionId
+============================================================
+
+============================================================
+CHUNK_ID: pattern_territory_search
+CHUNK_TYPE: query_pattern
+TABLE_NAME: Territory
+PATTERN_TYPE: search
+COLUMNS: TerritoryDescription
+RETRIEVAL_TEXT: Territory supports search analysis. Relevant columns: TerritoryDescription
+EMBEDDING_TEXT: Territory supports search analysis. Relevant columns: TerritoryDescription
+============================================================

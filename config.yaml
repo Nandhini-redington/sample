@@ -16,6 +16,9 @@ output:
   metadata_file: output/schema_metadata.json
   table_chunks: output/table_chunks.txt
   column_chunks: output/column_chunks.txt
+  business_chunks: output/business_chunks.txt
+  join_chunks: output/join_chunks.txt
+  query_pattern_chunks: output/query_pattern_chunks.txt
 
 s3:
   upload: true

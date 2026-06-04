@@ -1,252 +1,1716 @@
 
 ============================================================
+CHUNK_ID: column_category_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Category
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_category_categoryname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Category
+COLUMN_NAME: CategoryName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: CategoryName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: CategoryName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_category_description
+CHUNK_TYPE: column_entity
+TABLE_NAME: Category
+COLUMN_NAME: Description
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Description Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Description Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_category_categoryname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Category
+COLUMN_NAME: CategoryName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: CategoryName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: CategoryName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_category_description
+CHUNK_TYPE: column_entity
+TABLE_NAME: Category
+COLUMN_NAME: Description
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Description Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Category represents Category is a reference table used in business operations.. Business entity: Category Tags: category, categoryname, description, id Column: Description Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_id
 CHUNK_TYPE: column_entity
 TABLE_NAME: Customer
 COLUMN_NAME: Id
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: customer id identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_customer_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_contactname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_contacttitle
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactTitle
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactTitle Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactTitle Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Address
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_city
 CHUNK_TYPE: column_entity
 TABLE_NAME: Customer
 COLUMN_NAME: City
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: customer city filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_customer_region
 CHUNK_TYPE: column_entity
 TABLE_NAME: Customer
 COLUMN_NAME: Region
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: customer region filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_customer_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_country
 CHUNK_TYPE: column_entity
 TABLE_NAME: Customer
 COLUMN_NAME: Country
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: customer country filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_customer_phone
 CHUNK_TYPE: column_entity
 TABLE_NAME: Customer
-COLUMN_NAME: Id
-COLUMN_ROLE: search
-NL_MEANING: text field used for like search matching
-RETRIEVAL_TEXT: customer id search text field used for like search matching text name description string
+COLUMN_NAME: Phone
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_customer_fax
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Fax
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Fax Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Fax Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_contactname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_contacttitle
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: ContactTitle
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactTitle Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: ContactTitle Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Address
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_city
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: City
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_region
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Region
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_country
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Country
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_phone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Phone
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customer_fax
+CHUNK_TYPE: column_entity
+TABLE_NAME: Customer
+COLUMN_NAME: Fax
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Fax Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Customer represents Customer is a reference table used in business operations.. Business entity: Customer Tags: address, companyname, contactname, contacttitle, customer, id Column: Fax Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_customercustomerdemo_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerCustomerDemo
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_customercustomerdemo_customertypeid
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerCustomerDemo
+COLUMN_NAME: CustomerTypeId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: CustomerTypeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: CustomerTypeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_customercustomerdemo_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerCustomerDemo
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customercustomerdemo_customertypeid
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerCustomerDemo
+COLUMN_NAME: CustomerTypeId
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: CustomerTypeId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table CustomerCustomerDemo represents CustomerCustomerDemo is a reference table used in business operations.. Business entity: CustomerCustomerDemo Tags: customercustomerdemo, customertypeid, id Column: CustomerTypeId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customerdemographic_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerDemographic
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_customerdemographic_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerDemographic
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customerdemographic_customerdesc
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerDemographic
+COLUMN_NAME: CustomerDesc
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: CustomerDesc Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: CustomerDesc Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_customerdemographic_customerdesc
+CHUNK_TYPE: column_entity
+TABLE_NAME: CustomerDemographic
+COLUMN_NAME: CustomerDesc
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: CustomerDesc Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table CustomerDemographic represents CustomerDemographic is a reference table used in business operations.. Business entity: CustomerDemographic Tags: customerdemographic, customerdesc, id Column: CustomerDesc Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_reportsto
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: ReportsTo
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: ReportsTo Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: ReportsTo Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_lastname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: LastName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: LastName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: LastName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_firstname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: FirstName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: FirstName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: FirstName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_title
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Title
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Title Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Title Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_titleofcourtesy
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: TitleOfCourtesy
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: TitleOfCourtesy Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: TitleOfCourtesy Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_birthdate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: BirthDate
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_hiredate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: HireDate
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Address
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_city
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: City
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_region
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Region
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_country
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Country
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_homephone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: HomePhone
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HomePhone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HomePhone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_extension
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Extension
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Extension Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Extension Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_notes
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Notes
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Notes Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Notes Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_photopath
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: PhotoPath
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PhotoPath Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PhotoPath Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_birthdate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: BirthDate
+COLUMN_ROLE: temporal
+NL_MEANING: date time used for ordering and time filtering
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_hiredate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: HireDate
+COLUMN_ROLE: temporal
+NL_MEANING: date time used for ordering and time filtering
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_lastname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: LastName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: LastName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: LastName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_firstname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: FirstName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: FirstName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: FirstName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_title
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Title
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Title Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Title Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_titleofcourtesy
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: TitleOfCourtesy
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: TitleOfCourtesy Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: TitleOfCourtesy Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_birthdate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: BirthDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: BirthDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_hiredate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: HireDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HireDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Address
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_city
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: City
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_region
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Region
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_country
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Country
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_homephone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: HomePhone
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HomePhone Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: HomePhone Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_extension
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Extension
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Extension Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Extension Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_notes
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: Notes
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Notes Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: Notes Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employee_photopath
+CHUNK_TYPE: column_entity
+TABLE_NAME: Employee
+COLUMN_NAME: PhotoPath
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PhotoPath Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Employee represents Employee is a reference table used in business operations.. Business entity: Employee Tags: employee, firstname, id, lastname, title, titleofcourtesy Column: PhotoPath Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_employeeterritory_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: EmployeeTerritory
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_employeeterritory_employeeid
+CHUNK_TYPE: column_entity
+TABLE_NAME: EmployeeTerritory
+COLUMN_NAME: EmployeeId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: EmployeeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: EmployeeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_employeeterritory_territoryid
+CHUNK_TYPE: column_entity
+TABLE_NAME: EmployeeTerritory
+COLUMN_NAME: TerritoryId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: TerritoryId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: TerritoryId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_employeeterritory_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: EmployeeTerritory
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_employeeterritory_territoryid
+CHUNK_TYPE: column_entity
+TABLE_NAME: EmployeeTerritory
+COLUMN_NAME: TerritoryId
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: TerritoryId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table EmployeeTerritory represents EmployeeTerritory is a reference table used in business operations.. Business entity: EmployeeTerritory Tags: employeeid, employeeterritory, id, territoryid Column: TerritoryId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_order_id
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: Id
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: order id identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_customerid
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: CustomerId
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: order customerid identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: CustomerId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: CustomerId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_employeeid
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: EmployeeId
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: order employeeid identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: EmployeeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: EmployeeId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shipvia
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipVia
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipVia Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipVia Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_ID: column_order_freight
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: Freight
 COLUMN_ROLE: aggregation
 NL_MEANING: numeric field used for sum avg count analytics
-RETRIEVAL_TEXT: order freight aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: Freight Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: Freight Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_customerid
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: CustomerId
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: CustomerId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: CustomerId Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_order_orderdate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: OrderDate
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order orderdate filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_requireddate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: RequiredDate
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order requireddate filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shippeddate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: ShippedDate
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order shippeddate filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shipname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipaddress
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipAddress
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipAddress Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipAddress Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipcity
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: ShipCity
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order shipcity filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCity Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCity Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shipregion
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: ShipRegion
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order shipregion filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipRegion Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipRegion Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shippostalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipPostalCode
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipPostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipPostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipcountry
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: ShipCountry
 COLUMN_ROLE: filter
 NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: order shipcountry filter used in where clause filtering conditions equals condition filter search
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCountry Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCountry Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_orderdate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: OrderDate
 COLUMN_ROLE: temporal
 NL_MEANING: date time used for ordering and time filtering
-RETRIEVAL_TEXT: order orderdate temporal date time used for ordering and time filtering date time timestamp order
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_requireddate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: RequiredDate
 COLUMN_ROLE: temporal
 NL_MEANING: date time used for ordering and time filtering
-RETRIEVAL_TEXT: order requireddate temporal date time used for ordering and time filtering date time timestamp order
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_shippeddate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
 COLUMN_NAME: ShippedDate
 COLUMN_ROLE: temporal
 NL_MEANING: date time used for ordering and time filtering
-RETRIEVAL_TEXT: order shippeddate temporal date time used for ordering and time filtering date time timestamp order
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: temporal Meaning: date time used for ordering and time filtering Keywords: date time timestamp order
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_orderdate
 CHUNK_TYPE: column_entity
 TABLE_NAME: Order
-COLUMN_NAME: CustomerId
+COLUMN_NAME: OrderDate
 COLUMN_ROLE: search
 NL_MEANING: text field used for like search matching
-RETRIEVAL_TEXT: order customerid search text field used for like search matching text name description string
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: OrderDate Role: search Meaning: text field used for like search matching Keywords: text name description string
 ============================================================
 
 ============================================================
+CHUNK_ID: column_order_requireddate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: RequiredDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: RequiredDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shippeddate
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShippedDate
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShippedDate Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipaddress
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipAddress
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipAddress Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipAddress Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipcity
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCity
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCity Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCity Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipregion
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipRegion
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipRegion Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipRegion Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shippostalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipPostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipPostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipPostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_order_shipcountry
+CHUNK_TYPE: column_entity
+TABLE_NAME: Order
+COLUMN_NAME: ShipCountry
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCountry Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Order represents Order is a master table used in business operations.. Business entity: Order Tags: customerid, employeeid, id, order, orderdate, requireddate Column: ShipCountry Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_orderid
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: OrderId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: OrderId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: OrderId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_productid
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: ProductId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: ProductId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: ProductId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_unitprice
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: UnitPrice
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: UnitPrice Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: UnitPrice Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_quantity
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: Quantity
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Quantity Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Quantity Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_discount
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: Discount
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Discount Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Discount Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+============================================================
+
+============================================================
+CHUNK_ID: column_orderdetail_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: OrderDetail
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table OrderDetail represents OrderDetail is a master table used in business operations.. Business entity: OrderDetail Tags: id, orderdetail, orderid, productid, quantity, unitprice Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_product_id
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: Id
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: product id identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_supplierid
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: SupplierId
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: product supplierid identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: SupplierId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: SupplierId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_categoryid
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: CategoryId
 COLUMN_ROLE: identity
 NL_MEANING: unique identifier primary key join key
-RETRIEVAL_TEXT: product categoryid identity unique identifier primary key join key id identifier key
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: CategoryId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: CategoryId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_unitprice
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: UnitPrice
 COLUMN_ROLE: aggregation
 NL_MEANING: numeric field used for sum avg count analytics
-RETRIEVAL_TEXT: product unitprice aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitPrice Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitPrice Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_unitsinstock
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: UnitsInStock
 COLUMN_ROLE: aggregation
 NL_MEANING: numeric field used for sum avg count analytics
-RETRIEVAL_TEXT: product unitsinstock aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitsInStock Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitsInStock Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_unitsonorder
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: UnitsOnOrder
 COLUMN_ROLE: aggregation
 NL_MEANING: numeric field used for sum avg count analytics
-RETRIEVAL_TEXT: product unitsonorder aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitsOnOrder Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: UnitsOnOrder Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_reorderlevel
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: ReorderLevel
 COLUMN_ROLE: aggregation
 NL_MEANING: numeric field used for sum avg count analytics
-RETRIEVAL_TEXT: product reorderlevel aggregation numeric field used for sum avg count analytics amount total revenue salary metric
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ReorderLevel Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ReorderLevel Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_discontinued
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
-COLUMN_NAME: CategoryId
-COLUMN_ROLE: filter
-NL_MEANING: used in where clause filtering conditions
-RETRIEVAL_TEXT: product categoryid filter used in where clause filtering conditions equals condition filter search
+COLUMN_NAME: Discontinued
+COLUMN_ROLE: aggregation
+NL_MEANING: numeric field used for sum avg count analytics
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: Discontinued Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: Discontinued Role: aggregation Meaning: numeric field used for sum avg count analytics Keywords: amount total revenue salary metric
 ============================================================
 
 ============================================================
+CHUNK_ID: column_product_productname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: ProductName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ProductName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ProductName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_product_quantityperunit
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: QuantityPerUnit
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: QuantityPerUnit Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: QuantityPerUnit Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_product_productname
 CHUNK_TYPE: column_entity
 TABLE_NAME: Product
 COLUMN_NAME: ProductName
 COLUMN_ROLE: search
 NL_MEANING: text field used for like search matching
-RETRIEVAL_TEXT: product productname search text field used for like search matching text name description string
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ProductName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: ProductName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_product_quantityperunit
+CHUNK_TYPE: column_entity
+TABLE_NAME: Product
+COLUMN_NAME: QuantityPerUnit
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: QuantityPerUnit Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Product represents Product is a reference table used in business operations.. Business entity: Product Tags: categoryid, id, product, productname, quantityperunit, supplierid Column: QuantityPerUnit Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_region_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Region
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_region_regiondescription
+CHUNK_TYPE: column_entity
+TABLE_NAME: Region
+COLUMN_NAME: RegionDescription
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: RegionDescription Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: RegionDescription Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_region_regiondescription
+CHUNK_TYPE: column_entity
+TABLE_NAME: Region
+COLUMN_NAME: RegionDescription
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: RegionDescription Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Region represents Region is a reference table used in business operations.. Business entity: Region Tags: id, region, regiondescription Column: RegionDescription Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_shipper_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Shipper
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_shipper_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Shipper
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_shipper_phone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Shipper
+COLUMN_NAME: Phone
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_shipper_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Shipper
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_shipper_phone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Shipper
+COLUMN_NAME: Phone
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Shipper represents Shipper is a reference table used in business operations.. Business entity: Shipper Tags: companyname, id, phone, shipper Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: CompanyName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_contactname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: ContactName
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactName Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_contacttitle
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: ContactTitle
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactTitle Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactTitle Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Address
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Address Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_city
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: City
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: City Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_region
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Region
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Region Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: PostalCode Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_country
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Country
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Country Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_phone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Phone
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Phone Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_fax
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Fax
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Fax Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Fax Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_homepage
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: HomePage
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: HomePage Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: HomePage Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_companyname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: CompanyName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: CompanyName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_contactname
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: ContactName
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactName Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactName Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_contacttitle
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: ContactTitle
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactTitle Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: ContactTitle Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_address
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Address
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Address Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_city
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: City
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: City Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_region
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Region
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Region Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_postalcode
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: PostalCode
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: PostalCode Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_country
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Country
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Country Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_phone
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Phone
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Phone Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_fax
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: Fax
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Fax Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: Fax Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_supplier_homepage
+CHUNK_TYPE: column_entity
+TABLE_NAME: Supplier
+COLUMN_NAME: HomePage
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: HomePage Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Supplier represents Supplier is a reference table used in business operations.. Business entity: Supplier Tags: address, companyname, contactname, contacttitle, id, supplier Column: HomePage Role: search Meaning: text field used for like search matching Keywords: text name description string
+============================================================
+
+============================================================
+CHUNK_ID: column_territory_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Territory
+COLUMN_NAME: Id
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: Id Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_territory_regionid
+CHUNK_TYPE: column_entity
+TABLE_NAME: Territory
+COLUMN_NAME: RegionId
+COLUMN_ROLE: identity
+NL_MEANING: unique identifier primary key join key
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: RegionId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: RegionId Role: identity Meaning: unique identifier primary key join key Keywords: id identifier key
+============================================================
+
+============================================================
+CHUNK_ID: column_territory_id
+CHUNK_TYPE: column_entity
+TABLE_NAME: Territory
+COLUMN_NAME: Id
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: Id Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_territory_territorydescription
+CHUNK_TYPE: column_entity
+TABLE_NAME: Territory
+COLUMN_NAME: TerritoryDescription
+COLUMN_ROLE: filter
+NL_MEANING: used in where clause filtering conditions
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: TerritoryDescription Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: TerritoryDescription Role: filter Meaning: used in where clause filtering conditions Keywords: equals condition filter search
+============================================================
+
+============================================================
+CHUNK_ID: column_territory_territorydescription
+CHUNK_TYPE: column_entity
+TABLE_NAME: Territory
+COLUMN_NAME: TerritoryDescription
+COLUMN_ROLE: search
+NL_MEANING: text field used for like search matching
+RETRIEVAL_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: TerritoryDescription Role: search Meaning: text field used for like search matching Keywords: text name description string
+EMBEDDING_TEXT: Table Territory represents Territory is a reference table used in business operations.. Business entity: Territory Tags: id, regionid, territory, territorydescription Column: TerritoryDescription Role: search Meaning: text field used for like search matching Keywords: text name description string
 ============================================================
